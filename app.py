@@ -1,7 +1,7 @@
 import csv, io, json, os, uuid
 from datetime import datetime
 from flask import Flask, jsonify, redirect, render_template, request, session, url_for, flash
-from auth import login_required, APP_USERNAME, APP_PASSWORD
+from auth import login_required, check_credentials
 from categories import CATEGORIES, SUBCATEGORY_COLORS, CHASE_CATEGORY_MAP, auto_detect_subcategory
 from error_log import register_error_handlers, log_error
 import github_store as store
@@ -18,7 +18,7 @@ def login():
     if request.method == "POST":
         u = request.form.get("username", "").strip()
         p = request.form.get("password", "").strip()
-        if u.lower() == APP_USERNAME.lower() and p.lower() == APP_PASSWORD.lower():
+        if check_credentials(u, p):
             session["logged_in"] = True
             session["username"]  = u
             return redirect(request.args.get("next") or url_for("index"))
