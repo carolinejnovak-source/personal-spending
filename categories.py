@@ -1,7 +1,6 @@
 CATEGORIES = {
     "Automotive":                       {"color": "#64748b", "subcategories": ["Gas", "Parking", "Ubers & Lyfts"]},
     "Bills & Utilities":                {"color": "#0ea5e9", "subcategories": []},
-    "Education":                        {"color": "#8b5cf6", "subcategories": []},
     "Entertainment":                    {"color": "#f43f5e", "subcategories": ["Kids Entertainment", "Parent Entertainment", "Museums"]},
     "Fees & Adjustments":               {"color": "#94a3b8", "subcategories": []},
     "Food & Drink":                     {"color": "#f97316", "subcategories": []},
@@ -9,7 +8,7 @@ CATEGORIES = {
     "Groceries":                        {"color": "#22c55e", "subcategories": []},
     "Health & Wellness":                {"color": "#ef4444", "subcategories": ["Pharmacy", "Deductible & Coinsurance", "Copays", "Fitness", "Kids Dental", "Adult Dental"]},
     "Home":                             {"color": "#06b6d4", "subcategories": []},
-    "Kids":                             {"color": "#a855f7", "subcategories": ["Extracurriculars", "Educational Materials & Art", "Gifts"]},
+    "Kids":                             {"color": "#a855f7", "subcategories": ["Extracurriculars", "Educational Materials & Art", "School Fees", "Camps", "Gifts"]},
     "Miscellaneous":                    {"color": "#d1d5db", "subcategories": []},
     "Personal":                         {"color": "#6366f1", "subcategories": ["Beauty"]},
     "Professional Services":            {"color": "#14b8a6", "subcategories": []},
@@ -33,13 +32,13 @@ SUBCATEGORY_COLORS = {
     # Personal
     "Beauty": "#818cf8",
     # Kids
-    "Extracurriculars": "#c084fc", "Educational Materials & Art": "#a855f7", "Gifts": "#f472b6",
+    "Extracurriculars": "#c084fc", "Educational Materials & Art": "#a855f7", "School Fees": "#7c3aed", "Camps": "#6d28d9", "Gifts": "#f472b6",
 }
 
 CHASE_CATEGORY_MAP = {
     "Automotive": "Automotive",
     "Bills & Utilities": "Bills & Utilities",
-    "Education": "Education",
+    "Education": "Kids",
     "Entertainment": "Entertainment",
     "Fees & Adjustments": "Fees & Adjustments",
     "Food & Drink": "Food & Drink",
