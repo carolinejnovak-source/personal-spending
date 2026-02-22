@@ -1,5 +1,5 @@
 CATEGORIES = {
-    "Automotive":                       {"color": "#64748b", "subcategories": []},
+    "Automotive":                       {"color": "#64748b", "subcategories": ["Gas", "Parking", "Ubers & Lyfts"]},
     "Bills & Utilities":                {"color": "#0ea5e9", "subcategories": []},
     "Education":                        {"color": "#8b5cf6", "subcategories": ["Museums"]},
     "Entertainment":                    {"color": "#f43f5e", "subcategories": ["Kids Entertainment", "Parent Entertainment"]},
@@ -27,6 +27,8 @@ SUBCATEGORY_COLORS = {
     "Gifts for Friends": "#f9a8d4", "Gifts for Family": "#f472b6", "Charitable Donations": "#db2777",
     # Travel
     "Flights": "#93c5fd", "Hotels": "#60a5fa", "Dining": "#3b82f6",
+    # Automotive
+    "Gas": "#94a3b8", "Parking": "#64748b", "Ubers & Lyfts": "#475569",
     # Health & Wellness
     "Pharmacy": "#fca5a5", "Deductible": "#f87171", "Fitness": "#fb923c",
     # Entertainment

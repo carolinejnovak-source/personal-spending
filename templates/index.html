@@ -431,7 +431,7 @@ function renderTransactions(txns) {
           ${catOptions}
         </select>
       </td>
-      <td>
+      <td class="sub-cell">
         ${hasSubs ? `<select class="sub-select" id="sub-${t.id}" onchange="updateSubcat('${t.id}', this.value)">
           <option value="">— none —</option>${subOptions}
         </select>` : `<span class="text-muted" style="font-size:.78rem">—</span>`}
@@ -467,24 +467,26 @@ function renderPager(total, page, perPage) {
 }
 
 async function recategorize(id, newCat, newSub) {
-  // Reset subcategory when category changes
-  const cat = CATEGORIES[newCat] || {};
-  const subEl = document.getElementById(`sub-${id}`);
+  const cat  = CATEGORIES[newCat] || {};
+  const subs = cat.subcategories || [];
 
-  // Rebuild subcategory dropdown if needed
-  if (subEl) {
-    const subs = cat.subcategories || [];
+  // Always rebuild the subcategory cell so it appears/disappears correctly
+  const row     = document.getElementById(`txn-${id}`);
+  const subCell = row ? row.querySelector(".sub-cell") : null;
+  if (subCell) {
     if (subs.length) {
-      subEl.innerHTML = `<option value="">— none —</option>` + subs.map(s=>`<option value="${escHtml(s)}">${escHtml(s)}</option>`).join("");
+      subCell.innerHTML = `<select class="sub-select" id="sub-${id}" onchange="updateSubcat('${id}', this.value)">
+        <option value="">— none —</option>${subs.map(s=>`<option value="${escHtml(s)}">${escHtml(s)}</option>`).join("")}
+      </select>`;
+    } else {
+      subCell.innerHTML = `<span class="text-muted" style="font-size:.78rem">—</span>`;
     }
-    newSub = null;
   }
 
   await fetch("/api/recategorize", {
     method:"POST", headers:{"Content-Type":"application/json"},
-    body: JSON.stringify({id, category:newCat, subcategory:newSub})
+    body: JSON.stringify({id, category:newCat, subcategory:null})
   });
-  // Refresh chart silently
   loadChart();
 }
 
