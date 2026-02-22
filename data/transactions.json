@@ -620,7 +620,7 @@
       "amount": 49.65,
       "original_amount": 109.1,
       "category": "Travel",
-      "subcategory": null,
+      "subcategory": "Flights",
       "original_category": "Travel",
       "notes": "partial return"
     },
