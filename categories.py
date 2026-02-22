@@ -14,13 +14,13 @@ CATEGORIES = {
     "Miscellaneous":                    {"color": "#d1d5db", "subcategories": []},
     "Personal":                         {"color": "#6366f1", "subcategories": ["Beauty"]},
     "Professional Services":            {"color": "#14b8a6", "subcategories": []},
-    "Shopping":                         {"color": "#7c3aed", "subcategories": ["Kids Clothing", "Mom Clothing", "Home"]},
+    "Shopping":                         {"color": "#7c3aed", "subcategories": ["Kids Clothing", "Mom Clothing", "Dad Clothing", "Home"]},
     "Travel":                           {"color": "#1d4ed8", "subcategories": ["Flights", "Hotels", "Dining"]},
 }
 
 SUBCATEGORY_COLORS = {
     # Shopping
-    "Kids Clothing": "#c084fc", "Mom Clothing": "#a78bfa", "Home": "#818cf8",
+    "Kids Clothing": "#c084fc", "Mom Clothing": "#a78bfa", "Dad Clothing": "#6d28d9", "Home": "#818cf8",
     # Gifts & Donations
     "Gifts for Friends": "#f9a8d4", "Gifts for Family": "#f472b6", "Charitable Donations": "#db2777",
     # Travel
