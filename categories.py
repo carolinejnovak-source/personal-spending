@@ -8,7 +8,7 @@ CATEGORIES = {
     "Gas":                              {"color": "#eab308", "subcategories": []},
     "Gifts & Donations":                {"color": "#ec4899", "subcategories": ["Gifts for Friends", "Gifts for Family", "Charitable Donations"]},
     "Groceries":                        {"color": "#22c55e", "subcategories": []},
-    "Health & Wellness":                {"color": "#ef4444", "subcategories": ["Pharmacy", "Deductible", "Fitness"]},
+    "Health & Wellness":                {"color": "#ef4444", "subcategories": ["Pharmacy", "Deductible & Coinsurance", "Copays", "Fitness", "Kids Dental", "Adult Dental"]},
     "Home":                             {"color": "#06b6d4", "subcategories": []},
     "Kids":                             {"color": "#a855f7", "subcategories": ["Extracurriculars", "Educational Materials & Art", "Gifts"]},
     "Miscellaneous":                    {"color": "#d1d5db", "subcategories": []},
@@ -28,7 +28,7 @@ SUBCATEGORY_COLORS = {
     # Automotive
     "Gas": "#94a3b8", "Parking": "#64748b", "Ubers & Lyfts": "#475569",
     # Health & Wellness
-    "Pharmacy": "#fca5a5", "Deductible": "#f87171", "Fitness": "#fb923c",
+    "Pharmacy": "#fca5a5", "Deductible & Coinsurance": "#f87171", "Copays": "#fda4af", "Fitness": "#fb923c", "Kids Dental": "#f9a8d4", "Adult Dental": "#f472b6",
     # Entertainment
     "Kids Entertainment": "#fb7185", "Parent Entertainment": "#f43f5e",
     # Education
