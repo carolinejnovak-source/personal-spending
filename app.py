@@ -3,10 +3,12 @@ from datetime import datetime
 from flask import Flask, jsonify, redirect, render_template, request, session, url_for, flash
 from auth import login_required, APP_USERNAME, APP_PASSWORD
 from categories import CATEGORIES, SUBCATEGORY_COLORS, CHASE_CATEGORY_MAP, auto_detect_subcategory
+from error_log import register_error_handlers, log_error
 import github_store as store
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "personal-spending-secret-2026")
+register_error_handlers(app)
 
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
