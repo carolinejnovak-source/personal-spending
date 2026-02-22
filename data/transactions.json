@@ -1,7 +1,475 @@
 {
   "transactions": [
     {
-      "id": "48c65438-dee5-4b9c-a737-4749527400ed",
+      "id": "1ef7bbe8-e68b-4a06-ac14-127d085f844a",
+      "date": "2026-01-28",
+      "description": "THE SINLESS TAN",
+      "amount": 65.0,
+      "category": "Personal",
+      "subcategory": null,
+      "original_category": "Personal"
+    },
+    {
+      "id": "2ffc9675-b346-4a33-8df3-eee270d2d8f0",
+      "date": "2026-01-29",
+      "description": "NEW YORK MAGAZINE",
+      "amount": 8.0,
+      "category": "Professional Services",
+      "subcategory": null,
+      "original_category": "Professional Services"
+    },
+    {
+      "id": "a4805fff-f8a7-4546-8d83-375ce96a1446",
+      "date": "2026-01-29",
+      "description": "Amazon.com*8G5SO5VG3",
+      "amount": 24.52,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "1e8531d0-95b3-4cef-b258-573525c048c0",
+      "date": "2026-01-28",
+      "description": "HILTON ROSEMONT LIBERTY T",
+      "amount": 87.43,
+      "category": "Food & Drink",
+      "subcategory": null,
+      "original_category": "Food & Drink"
+    },
+    {
+      "id": "ece79f78-f13d-4308-b7dc-3d232672cdc3",
+      "date": "2026-01-30",
+      "description": "The Skin Care Center",
+      "amount": 30.0,
+      "category": "Health & Wellness",
+      "subcategory": null,
+      "original_category": "Health & Wellness"
+    },
+    {
+      "id": "940ebc97-8e3a-44db-9fcd-befa8c51a6ea",
+      "date": "2026-01-28",
+      "description": "VILLAGEOF ROSEMONT - WILL",
+      "amount": 20.0,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "c3cf3286-459c-4006-bcb4-632c79d73182",
+      "date": "2026-01-28",
+      "description": "STARBUCKS STORE 00217",
+      "amount": 7.31,
+      "category": "Food & Drink",
+      "subcategory": null,
+      "original_category": "Food & Drink"
+    },
+    {
+      "id": "21572378-e639-4c87-b9c4-0cdc346af689",
+      "date": "2026-01-29",
+      "description": "UBER   *TRIP",
+      "amount": 53.29,
+      "category": "Automotive",
+      "subcategory": null,
+      "original_category": "Automotive"
+    },
+    {
+      "id": "4fe1f74f-946b-4585-bb14-43d1821d1ea9",
+      "date": "2026-01-29",
+      "description": "HUDSON NEWS  ST849",
+      "amount": 10.11,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "d2b70124-e7f0-4cb1-919d-383bfc794cb7",
+      "date": "2026-01-29",
+      "description": "WALGREENS #249",
+      "amount": 18.18,
+      "category": "Health & Wellness",
+      "subcategory": null,
+      "original_category": "Health & Wellness"
+    },
+    {
+      "id": "51690100-c09a-4b83-aeb4-735f6dd5d516",
+      "date": "2026-01-29",
+      "description": "CANONICA SXM N.V.",
+      "amount": 4.0,
+      "category": "Groceries",
+      "subcategory": null,
+      "original_category": "Groceries"
+    },
+    {
+      "id": "d52481c2-e54e-4244-9349-3635516c6ef5",
+      "date": "2026-01-29",
+      "description": "Amazon.com*BL8OP1H42",
+      "amount": 24.96,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "fbbf064f-ab08-499b-9931-3eb9048bc11d",
+      "date": "2026-01-28",
+      "description": "UBER   *EATS",
+      "amount": 36.79,
+      "category": "Food & Drink",
+      "subcategory": null,
+      "original_category": "Food & Drink"
+    },
+    {
+      "id": "d2fb92de-c456-43e3-8c10-0bb389448f71",
+      "date": "2026-01-29",
+      "description": "UBER   *TRIP",
+      "amount": 12.54,
+      "category": "Automotive",
+      "subcategory": null,
+      "original_category": "Automotive"
+    },
+    {
+      "id": "611cc6e4-a85b-49bb-b2cb-afa14810f629",
+      "date": "2026-01-28",
+      "description": "NMMA-DISCOVER BOATING",
+      "amount": 30.0,
+      "category": "Entertainment",
+      "subcategory": null,
+      "original_category": "Entertainment"
+    },
+    {
+      "id": "323fd6aa-bbef-4f2b-baa9-b59ea7cbb02a",
+      "date": "2026-01-28",
+      "description": "WALGREENS #249",
+      "amount": 61.84,
+      "category": "Health & Wellness",
+      "subcategory": null,
+      "original_category": "Health & Wellness"
+    },
+    {
+      "id": "721b6431-609d-4fe5-9005-a6c54ad631c3",
+      "date": "2026-01-29",
+      "description": "AMERICAN AIR0014484481551",
+      "amount": 161.0,
+      "category": "Travel",
+      "subcategory": "Flights",
+      "original_category": "Travel"
+    },
+    {
+      "id": "41e31374-decd-4c92-a3e8-bbe4f1e2348d",
+      "date": "2026-01-27",
+      "description": "BP#9173782DIVISION BP",
+      "amount": 47.04,
+      "category": "Gas",
+      "subcategory": null,
+      "original_category": "Gas"
+    },
+    {
+      "id": "7df57f23-1e9f-4dc7-b01b-75e5b48c9653",
+      "date": "2026-01-28",
+      "description": "POTASH MARKET",
+      "amount": 9.18,
+      "category": "Groceries",
+      "subcategory": null,
+      "original_category": "Groceries"
+    },
+    {
+      "id": "81745a76-6a2d-4d9e-9f21-417c6d6b1aaa",
+      "date": "2026-01-29",
+      "description": "Amazon.com*912EK0NE3",
+      "amount": 38.17,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "cb39d194-e363-47ae-8a87-eef1864870c0",
+      "date": "2026-01-29",
+      "description": "LYFT   *2 RIDES 01-27",
+      "amount": 21.75,
+      "category": "Automotive",
+      "subcategory": null,
+      "original_category": "Automotive"
+    },
+    {
+      "id": "6d36a50f-21ba-42e9-b477-5367fc79d172",
+      "date": "2026-01-28",
+      "description": "DD *DOORDASH BOMBAYWRA",
+      "amount": 22.5,
+      "category": "Food & Drink",
+      "subcategory": null,
+      "original_category": "Food & Drink"
+    },
+    {
+      "id": "c8e19795-9695-4ce5-925a-1bba9f9e0b42",
+      "date": "2026-01-28",
+      "description": "SOLDIER FIELD EAST MUSEU",
+      "amount": 32.0,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "82b37b44-91b1-4744-a177-6981d26170cc",
+      "date": "2026-01-28",
+      "description": "UBER   *TRIP",
+      "amount": 16.37,
+      "category": "Automotive",
+      "subcategory": null,
+      "original_category": "Automotive"
+    },
+    {
+      "id": "0348ed8b-a695-42e3-bd58-8186a852b5be",
+      "date": "2026-01-27",
+      "description": "UBER   *TRIP",
+      "amount": 9.93,
+      "category": "Automotive",
+      "subcategory": null,
+      "original_category": "Automotive"
+    },
+    {
+      "id": "15886e6d-46aa-4d6a-82d6-ac85186772fa",
+      "date": "2026-01-27",
+      "description": "Amazon.com*SM8L46TS3",
+      "amount": 9.05,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "705c0929-ba25-406f-9fd0-d126f8399b8e",
+      "date": "2026-01-27",
+      "description": "Amazon.com*2D6P82TU3",
+      "amount": 14.03,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "d3b0f5a1-54ca-42c1-926c-7c3baceae662",
+      "date": "2026-01-27",
+      "description": "ST. CLEMENT CATHOLIC CHU",
+      "amount": 153.3,
+      "category": "Gifts & Donations",
+      "subcategory": null,
+      "original_category": "Gifts & Donations"
+    },
+    {
+      "id": "01109c09-83c4-4a29-b6a5-5a57464f89c4",
+      "date": "2026-01-27",
+      "description": "OLYMPIA CENTER GARAGE",
+      "amount": 18.0,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "fe9aae26-9d23-4696-8f7c-f4ec219113a7",
+      "date": "2026-01-27",
+      "description": "Kindle Svcs*B35WI9JT3",
+      "amount": 14.99,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "022bc909-b2e2-4cfc-b607-d6c630174746",
+      "date": "2026-01-27",
+      "description": "PEDIATRIC DENTAL HEALTH",
+      "amount": 492.0,
+      "category": "Health & Wellness",
+      "subcategory": null,
+      "original_category": "Health & Wellness"
+    },
+    {
+      "id": "9bc5b283-a3e8-4164-84ea-eefdee624e38",
+      "date": "2026-01-27",
+      "description": "NORDSTROM RACK #0268",
+      "amount": 55.06,
+      "category": "Shopping",
+      "subcategory": "Mom Clothing",
+      "original_category": "Shopping"
+    },
+    {
+      "id": "f5b0a2ee-69a7-4d9a-968a-cf238532bce7",
+      "date": "2026-01-27",
+      "description": "Amazon.com*0I6DL51F3",
+      "amount": 14.03,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "24624fe1-4e7d-4ad2-929a-4355e74d2881",
+      "date": "2026-01-26",
+      "description": "UBER   *TRIP",
+      "amount": 10.0,
+      "category": "Automotive",
+      "subcategory": null,
+      "original_category": "Automotive"
+    },
+    {
+      "id": "cdb8946f-51da-437d-9088-5992d606f14c",
+      "date": "2026-01-26",
+      "description": "SP PANGAIA",
+      "amount": 146.65,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "ddabe8aa-315e-4f1f-9b1e-cdf3208e8c22",
+      "date": "2026-01-26",
+      "description": "AMERICAN AI 0010642077914",
+      "amount": 69.8,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "3a756375-8d9a-402c-a335-d25562a269d7",
+      "date": "2026-01-27",
+      "description": "AMAZON MKTPL*0G3FE6YF3",
+      "amount": 17.5,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "666997f6-796a-430f-b70c-d8233529b7eb",
+      "date": "2026-01-26",
+      "description": "SP PLUMANDSPARROW",
+      "amount": 226.97,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "3b32857c-0d3f-40c1-9518-2975e37797ee",
+      "date": "2026-01-26",
+      "description": "7AM nails",
+      "amount": 99.0,
+      "category": "Personal",
+      "subcategory": null,
+      "original_category": "Personal"
+    },
+    {
+      "id": "99514370-0212-425a-8c20-628824d1d39c",
+      "date": "2026-01-26",
+      "description": "SNOW.COM/VAIL RESORTS SKI",
+      "amount": 115.0,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "0dcbf531-584a-45ac-a3be-3420eb45178a",
+      "date": "2026-01-25",
+      "description": "WILMOT MOUNTAIN F&amp;B",
+      "amount": 19.78,
+      "category": "Food & Drink",
+      "subcategory": null,
+      "original_category": "Food & Drink"
+    },
+    {
+      "id": "298b8536-4d21-47f8-8ee4-00a12e6f2ee0",
+      "date": "2026-01-26",
+      "description": "WILMOT MOUNTAIN",
+      "amount": 25.33,
+      "category": "Education",
+      "subcategory": null,
+      "original_category": "Education"
+    },
+    {
+      "id": "94833adf-ed56-48ff-9be3-cec30c9c0ef4",
+      "date": "2026-01-26",
+      "description": "APPLE.COM/BILL",
+      "amount": 4.4,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "5ea3a626-920a-4dbf-bb23-d8632257f6c6",
+      "date": "2026-01-26",
+      "description": "Kindle Svcs*C40EH4AB3",
+      "amount": 4.99,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "08a61627-7b62-4a22-a973-7776f807e032",
+      "date": "2026-01-25",
+      "description": "EXXON ROCK CORNER GAS",
+      "amount": 6.51,
+      "category": "Gas",
+      "subcategory": null,
+      "original_category": "Gas"
+    },
+    {
+      "id": "36e18eaa-187f-4ed0-8e63-7e9859910090",
+      "date": "2026-01-25",
+      "description": "Amazon.com*OC6YU35E3",
+      "amount": 6.6,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "3359366c-1cc7-4f25-bbdc-d2e01420dadc",
+      "date": "2026-01-25",
+      "description": "AMAZON MKTPL*PW2SK53W3",
+      "amount": 104.73,
+      "category": "Shopping",
+      "subcategory": null,
+      "original_category": "Shopping"
+    },
+    {
+      "id": "9d16b6e3-59ed-4801-818f-da68ee776a07",
+      "date": "2026-01-24",
+      "description": "WINAIR",
+      "amount": 32.91,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "5caed091-9cd5-486d-9e6d-514e293013d3",
+      "date": "2026-01-25",
+      "description": "DD *DOORDASH SWEETRICE",
+      "amount": 61.56,
+      "category": "Food & Drink",
+      "subcategory": null,
+      "original_category": "Food & Drink"
+    },
+    {
+      "id": "cc0ed341-efb5-4519-8f7b-e9fd2cbed5ea",
+      "date": "2026-01-25",
+      "description": "NYTIMES DISC*",
+      "amount": 4.0,
+      "category": "Bills & Utilities",
+      "subcategory": null,
+      "original_category": "Bills & Utilities"
+    },
+    {
+      "id": "bab1ecb6-4116-45d8-8ffb-9958adca578c",
+      "date": "2026-01-25",
+      "description": "UBER   *TRIP",
+      "amount": 19.74,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "85a9af15-3582-4243-b4ae-f89f668077e9",
+      "date": "2026-01-24",
+      "description": "AMERICAN AI 0012309495731",
+      "amount": 109.1,
+      "category": "Travel",
+      "subcategory": null,
+      "original_category": "Travel"
+    },
+    {
+      "id": "b0c19e5e-2323-4f8c-9b2f-3635d3841314",
       "date": "2026-01-24",
       "description": "AMERICAN AIR0012309492618",
       "amount": 150.5,
@@ -10,7 +478,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "bdab5c8e-4d30-4e82-9d1b-6dd66b02f885",
+      "id": "70752bdb-c599-47a2-829e-5a4b225099f9",
       "date": "2026-01-24",
       "description": "NUULY",
       "amount": 28.48,
@@ -19,7 +487,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "cb6e59d0-c830-4694-9d4e-bd2387223292",
+      "id": "3b8cabbd-2020-4e72-9630-6d72b96f4ccf",
       "date": "2026-01-23",
       "description": "Amazon Tips*954GP5BM3",
       "amount": 10.0,
@@ -28,7 +496,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "ef1dfea8-d979-4530-bf57-d87995b6ea2d",
+      "id": "ebffc5fe-ba86-4fa0-b89c-b14b50dc270d",
       "date": "2026-01-24",
       "description": "SP VIX SWIMWEAR INC",
       "amount": 399.67,
@@ -37,7 +505,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "255ca52e-58ef-4165-9335-94ed238ea6c9",
+      "id": "94324303-ec72-4b05-9d6a-60d8624376c9",
       "date": "2026-01-24",
       "description": "DD *DOORDASH CRYINGTIG",
       "amount": 112.24,
@@ -46,7 +514,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "c3551ab4-1277-484a-8a40-0014be4f218c",
+      "id": "66627823-d12b-46b8-a92b-a7e598b17525",
       "date": "2026-01-24",
       "description": "NUULY",
       "amount": 108.78,
@@ -55,7 +523,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "62d95a27-aa45-4cf7-93a0-3fb17dd1d261",
+      "id": "010acbd4-3424-43db-9c09-627f033ec45b",
       "date": "2026-01-25",
       "description": "DD *DOORDASH GOPUFF",
       "amount": 7.25,
@@ -64,7 +532,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "fff2a711-21bf-4b4e-9d82-69cb0dd23768",
+      "id": "1f3e7b97-f881-4e4a-a9bb-f96c6b58af2f",
       "date": "2026-01-23",
       "description": "Prime Video *YG0Q94XW3",
       "amount": 22.04,
@@ -73,7 +541,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "58f0aaa7-ec55-4a61-9329-8900cda00a72",
+      "id": "defbc340-65cd-4f68-9df7-509cf86ba40c",
       "date": "2026-01-23",
       "description": "UBER   *TRIP",
       "amount": 7.98,
@@ -82,7 +550,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "1b53dc2a-a881-46a0-a114-210cf86d280f",
+      "id": "8cd27f9c-e39c-4aea-be9d-0433d8f52d18",
       "date": "2026-01-23",
       "description": "NAYAX VENDING 91",
       "amount": 8.0,
@@ -91,7 +559,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "ebd2cfa0-d297-476e-a2f3-271cd96d6bac",
+      "id": "606c43ef-a048-431f-9011-eb11aa3dfad5",
       "date": "2026-01-24",
       "description": "SP LASHIFY INC",
       "amount": 63.27,
@@ -100,7 +568,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "065575d2-640e-4a5c-925c-9deb0bcbad28",
+      "id": "14a6f270-538a-4b70-927c-918830e7fc9b",
       "date": "2026-01-24",
       "description": "PARK CHICAGO MOBILE",
       "amount": 20.0,
@@ -109,7 +577,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "1f2dbded-780a-4457-826e-cf40d482901d",
+      "id": "edec6f18-0ec7-4b9c-834b-4543019f65a1",
       "date": "2026-01-24",
       "description": "AT *FIELD MUSEUM",
       "amount": 185.0,
@@ -118,7 +586,7 @@
       "original_category": "Education"
     },
     {
-      "id": "1d47317c-ede6-4c73-a810-3607c0776d6c",
+      "id": "b54a126f-1f88-4150-bd75-b78f9cf14220",
       "date": "2026-01-23",
       "description": "USPS PO 1616230041",
       "amount": 50.0,
@@ -127,7 +595,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "5e837bae-7204-486a-801f-7fe6af4d6c7a",
+      "id": "52123796-9bc7-4d72-8b4d-cb3f9fbc9628",
       "date": "2026-01-25",
       "description": "CLASSPASS* TOP_UP",
       "amount": 21.0,
@@ -136,7 +604,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "bb9e4eb6-461c-448c-8f52-ad12fd3545eb",
+      "id": "b8e3891d-28ac-4acb-b6b5-4bcfbbd03b20",
       "date": "2026-01-24",
       "description": "Canteen Chicago Centra",
       "amount": 3.1,
@@ -145,7 +613,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "41b61e5c-7d0e-4270-b67a-b4469cb5be46",
+      "id": "b4dd2dc0-6088-49be-8fbb-a6655cdd0052",
       "date": "2026-01-24",
       "description": "AMERICAN AIR0010642015029",
       "amount": 55.05,
@@ -154,7 +622,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "09d6cfdb-f9be-4dcf-b470-b80e7ebc9516",
+      "id": "dc9ea079-e199-4238-8438-dfa4bb2b68f6",
       "date": "2026-01-22",
       "description": "WALGREENS #249",
       "amount": 15.6,
@@ -163,7 +631,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "91cf15d7-c933-44b0-a8f5-286c17201ca0",
+      "id": "84e4a6eb-6229-421b-b639-c7d4e2c55cac",
       "date": "2026-01-21",
       "description": "WHITE GLOVE CAR WASH",
       "amount": 27.99,
@@ -172,7 +640,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "d1cfd35f-b234-4236-ab75-4dbe24057554",
+      "id": "443626f4-ea13-4644-b464-ec0760f79315",
       "date": "2026-01-22",
       "description": "J CREW FACTORY.COM",
       "amount": 115.76,
@@ -181,7 +649,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "cb1dbc38-18ed-4b15-bc99-91e7643e30b6",
+      "id": "226189c0-bc60-42a6-8bd4-9965f5015673",
       "date": "2026-01-22",
       "description": "FWD*SOCCER STARS OF CH",
       "amount": 200.0,
@@ -190,7 +658,7 @@
       "original_category": "Education"
     },
     {
-      "id": "5f4e6950-b1e6-43d6-b7ed-a4e58c31b214",
+      "id": "da3b7917-3940-443f-b627-ad9601b4596d",
       "date": "2026-01-21",
       "description": "SHELL OIL 57444580005",
       "amount": 41.05,
@@ -199,7 +667,7 @@
       "original_category": "Gas"
     },
     {
-      "id": "1c873ef7-3a55-447a-b659-dabe804d3fdb",
+      "id": "6be555a4-bf4f-4730-8cec-3de5cf22ce64",
       "date": "2026-01-22",
       "description": "EVOLVE BY HUD ST2324",
       "amount": 9.78,
@@ -208,7 +676,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "36d2f1c0-731e-4098-80b9-c930586a36b0",
+      "id": "2d419513-903d-4962-a2a8-26f13fb6d722",
       "date": "2026-01-22",
       "description": "THEFITZ* THEFITZ",
       "amount": 756.0,
@@ -217,7 +685,7 @@
       "original_category": "Personal"
     },
     {
-      "id": "9456743b-c037-4a0b-b14e-79461b47633f",
+      "id": "78dad5c4-0bb8-48e4-81ed-52bb22eb6e66",
       "date": "2026-01-22",
       "description": "Amazon.com*210J133G3",
       "amount": 159.29,
@@ -226,7 +694,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "e5fa39ea-8e65-4f46-9cd4-b2dd21c4e573",
+      "id": "36b98791-0912-4548-944e-11703da53c4c",
       "date": "2026-01-21",
       "description": "SEPHORA 42ND &amp; MADISON",
       "amount": 149.16,
@@ -235,7 +703,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "07e0c769-c54d-416a-a97a-59cac59d87cc",
+      "id": "1a118471-08d4-478d-a127-0498432ac7fd",
       "date": "2026-01-21",
       "description": "WHOLEFDS KBS 10252",
       "amount": 203.57,
@@ -244,7 +712,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "af04c848-13b8-4c05-bb37-401658c66892",
+      "id": "57d9de1e-121f-49a0-b314-1c7d79ebe0dc",
       "date": "2026-01-21",
       "description": "WALGREENS #249",
       "amount": 19.82,
@@ -253,7 +721,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "5c27ea14-16e6-407a-baa3-ad8697030e1d",
+      "id": "115b181f-5a39-473c-b104-12be145cd299",
       "date": "2026-01-21",
       "description": "OURARING INC.",
       "amount": 5.99,
@@ -262,7 +730,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "1ecf041e-e1a2-44a6-ab60-b7408c05d287",
+      "id": "100ccbaf-69b5-4c2d-9b98-5c075be37bd8",
       "date": "2026-01-21",
       "description": "TST* CUMIN",
       "amount": 28.82,
@@ -271,7 +739,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "5673b5c1-1013-4f2f-a8c7-0c1c14897690",
+      "id": "59f275b9-14b6-43f5-98cd-f32809e84982",
       "date": "2026-01-20",
       "description": "WHITE TIGER MARTIAL ARTS",
       "amount": 419.0,
@@ -280,7 +748,7 @@
       "original_category": "Education"
     },
     {
-      "id": "eba59338-3b4d-4d42-8443-98725d055b91",
+      "id": "459b3f90-c824-4b91-8aab-318b3ba12c4d",
       "date": "2026-01-21",
       "description": "UBER   *TRIP",
       "amount": 14.41,
@@ -289,7 +757,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "7bdf8b02-8bf7-424c-9362-3a0317e9a8aa",
+      "id": "1381c994-6528-4ae3-846e-3d399b7a0017",
       "date": "2026-01-18",
       "description": "JEDEDIAH JACKSON",
       "amount": 11.39,
@@ -298,7 +766,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "4895b521-02e5-4d61-b0bb-4f017bcd0cb1",
+      "id": "8c1f9406-5b0c-42d8-96a9-34dc7b8f107c",
       "date": "2026-01-20",
       "description": "MICHAELS STORES 1314",
       "amount": 30.14,
@@ -307,7 +775,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "640abe42-097f-4930-b193-f8af28849a97",
+      "id": "d73d574b-e6df-4bf4-ad57-f146adfaeca3",
       "date": "2026-01-21",
       "description": "ACTBLUE* EVERYTOWN",
       "amount": 50.0,
@@ -316,7 +784,7 @@
       "original_category": "Gifts & Donations"
     },
     {
-      "id": "158daa76-9bf6-41ec-8bae-7b90b2c4db4a",
+      "id": "63470e0f-afea-4c10-80a4-07f618aa5d1d",
       "date": "2026-01-20",
       "description": "FRESH THYME #107",
       "amount": 11.85,
@@ -325,7 +793,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "dcd814b3-1b85-45c3-a537-7b1a7a6b483e",
+      "id": "7b9dee07-d96c-4480-bfdb-7ec368c99947",
       "date": "2026-01-19",
       "description": "CHUCK E CHEESE 687",
       "amount": 37.0,
@@ -334,7 +802,7 @@
       "original_category": "Entertainment"
     },
     {
-      "id": "907e6bb2-f9e3-48d8-b853-8e884fe95fde",
+      "id": "57ab505a-fcb8-40d7-a93c-93fc98a94fab",
       "date": "2026-01-20",
       "description": "Amazon.com*YW3Z087R3",
       "amount": 153.02,
@@ -343,7 +811,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "dcbf5bad-1b8a-4394-899e-69e487cb1c21",
+      "id": "9438c5c9-6ccd-41b3-9f80-67be338dd000",
       "date": "2026-01-19",
       "description": "Sky High Niles",
       "amount": 51.5,
@@ -352,7 +820,7 @@
       "original_category": "Entertainment"
     },
     {
-      "id": "0cbaba01-afda-48cd-94d4-38fe8884cc79",
+      "id": "b6fd6627-ae15-4738-86e5-f10e9ce2c456",
       "date": "2026-01-20",
       "description": "UBER   *TRIP",
       "amount": 8.23,
@@ -361,7 +829,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "f5eb0491-f88e-4324-acc2-968f484dc50a",
+      "id": "09ce7385-8a49-4131-b495-67f45e1aa0ab",
       "date": "2026-01-19",
       "description": "WALGREENS #249",
       "amount": 9.03,
@@ -370,7 +838,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "c9470cf6-8bf9-4c30-9f9a-316ad8a64b03",
+      "id": "5a1508da-e808-4f6c-a17d-381d662990d3",
       "date": "2026-01-18",
       "description": "UBER   *TRIP",
       "amount": 77.05,
@@ -379,7 +847,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "f5f6067d-f738-4f69-941b-fd20b74abf90",
+      "id": "0c44640d-5598-45ca-92f8-44346ccf2c65",
       "date": "2026-01-18",
       "description": "SP MANGY MOOSE",
       "amount": 54.48,
@@ -388,7 +856,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "0a213bf9-8048-410b-ac7a-40fe4f286aa7",
+      "id": "c66513c2-c42e-4756-9f4f-d8eeb2c61809",
       "date": "2026-01-17",
       "description": "TETON VILLAGE SPORTS",
       "amount": 86.11,
@@ -397,7 +865,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "8c24069c-6d5c-4df0-bf45-192fda3399e4",
+      "id": "d940e22d-e66a-4921-951e-20af0604957a",
       "date": "2026-01-18",
       "description": "AMC 9640 ONLINE",
       "amount": 36.15,
@@ -406,7 +874,7 @@
       "original_category": "Entertainment"
     },
     {
-      "id": "baa157ed-f18a-4505-bd0b-03f610ce5538",
+      "id": "18e55aa8-3fb9-4321-897c-6bceb256d592",
       "date": "2026-01-19",
       "description": "UBER   *EATS",
       "amount": 58.84,
@@ -415,7 +883,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "a0ed5475-3693-4920-b9d2-e5c0e0d1fefc",
+      "id": "b0e931ac-fb54-4f5d-9847-ac91ba5f6641",
       "date": "2026-01-19",
       "description": "AMAZON MKTPL*F37T60763",
       "amount": 143.31,
@@ -424,7 +892,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "56978f69-efc7-4666-95a8-a3907eb236d7",
+      "id": "0f498471-cfac-4afa-9669-9d76db6e59f5",
       "date": "2026-01-18",
       "description": "PEARL STREET BAGELS - W",
       "amount": 13.42,
@@ -433,7 +901,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "8cceed12-11da-4535-950c-6ec39d91d1f2",
+      "id": "132c8e2f-7991-4131-9c87-caa4f0b17934",
       "date": "2026-01-18",
       "description": "DD *DOORDASH SOULSMOKE",
       "amount": 104.94,
@@ -442,7 +910,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "bc34027e-30bb-4d7f-9d36-23f92b7e65ee",
+      "id": "55c05ae7-b29f-46b1-bcda-502be2dca806",
       "date": "2026-01-18",
       "description": "TST* MANGY MOOSE RESTAURA",
       "amount": 290.43,
@@ -451,7 +919,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "543d15b7-543e-4cc9-a1d5-1111687ac0ab",
+      "id": "0124eef7-983c-4620-812f-7eca6e7ea6c1",
       "date": "2026-01-18",
       "description": "TST* MANGY MOOSE RESTAURA",
       "amount": 156.0,
@@ -460,7 +928,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "1966457f-bb49-49d9-9cf9-512c934d9630",
+      "id": "ee298516-63e1-4527-b1d5-28783d74bf70",
       "date": "2026-01-16",
       "description": "PERSEPHONE BAKERY",
       "amount": 25.43,
@@ -469,7 +937,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "a722a343-9c54-407f-a040-c6febd062bea",
+      "id": "a07b65e7-8199-4a84-8a1c-14d4b875d05d",
       "date": "2026-01-16",
       "description": "TST* MILLION DOLLAR COWBO",
       "amount": 218.0,
@@ -478,7 +946,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "8d7b372b-da97-482b-b0a8-2fcbe105c0bc",
+      "id": "4e3989bc-ae84-44c5-88fc-ca303c6f1a42",
       "date": "2026-01-16",
       "description": "JHMR CASPER RESTAURANT",
       "amount": 53.87,
@@ -487,7 +955,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "a7cb6e93-3b01-40b6-89aa-b6b1fa256df6",
+      "id": "a4278bcb-92db-4e5e-9f0f-efc28683c9ee",
       "date": "2026-01-16",
       "description": "TST* MILLION DOLLAR COWBO",
       "amount": 37.5,
@@ -496,7 +964,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "b096a200-5d29-4c22-ad76-7c1896c22c0d",
+      "id": "d4f88fb5-f68e-42be-a78e-3d9cfb799402",
       "date": "2026-01-17",
       "description": "NORDSTROM RACK #0268",
       "amount": 121.18,
@@ -505,7 +973,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "cd20d980-c560-4578-a4e9-db4f196b4076",
+      "id": "f7fca26e-902b-41e3-aab3-bd06631e9ac4",
       "date": "2026-01-17",
       "description": "UBER   *TRIP",
       "amount": 25.24,
@@ -514,7 +982,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "a5888cd0-7702-40ca-9823-8f791e966b48",
+      "id": "2dcf589c-86c6-4fcb-8a75-b1ea014619fe",
       "date": "2026-01-16",
       "description": "JHMR CASPER RESTAURANT",
       "amount": 21.59,
@@ -523,7 +991,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "1d969f3e-1b5e-4e45-b68f-d1224d33e081",
+      "id": "88d972f3-b55e-402b-8886-3dc4a5553503",
       "date": "2026-01-16",
       "description": "TST*SILVER DOLLAR BAR &amp;",
       "amount": 9.0,
@@ -532,7 +1000,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "c2519803-aeaf-4440-afab-c8c680f1f20b",
+      "id": "b84c7ae2-40c3-4064-a247-232a90fc734e",
       "date": "2026-01-16",
       "description": "TRAM DOCK",
       "amount": 39.6,
@@ -541,7 +1009,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "cd240133-b6a1-4cad-bba6-8eb4be6f6f33",
+      "id": "f152e112-30d4-42ee-b92c-8fcff69f9b94",
       "date": "2026-01-17",
       "description": "UBER   *EATS",
       "amount": 36.92,
@@ -550,7 +1018,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "0f3b8a0a-cdca-466b-8705-c6fd39207833",
+      "id": "84ca3f1f-b83b-49b1-b6c4-b846bf47f010",
       "date": "2026-01-16",
       "description": "TETON VILLAGE SPORTS",
       "amount": 93.74,
@@ -559,7 +1027,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "c47a0ed7-d42c-457d-9663-b896b37b5cc6",
+      "id": "f81d5f9f-1658-4162-9666-ec4f2340281f",
       "date": "2026-01-17",
       "description": "UBER   *TRIP",
       "amount": 31.59,
@@ -568,7 +1036,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "87a31678-4c45-4167-ab85-032adfe5f7a7",
+      "id": "1d03c2ae-d7e5-4492-b458-db979875e5bc",
       "date": "2026-01-17",
       "description": "TARGET        00009274",
       "amount": 86.96,
@@ -577,7 +1045,7 @@
       "original_category": "Home"
     },
     {
-      "id": "14737b96-168a-4603-a027-e1c34882bf34",
+      "id": "724cefa8-fa6a-4950-8f50-90786e56d7c8",
       "date": "2026-01-17",
       "description": "TST* THE ROSE",
       "amount": 89.75,
@@ -586,7 +1054,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "0bbe59dc-5c98-414b-8633-a80493f96afb",
+      "id": "d824af93-6bbe-4be2-95c4-9269a283a362",
       "date": "2026-01-16",
       "description": "TST*SILVER DOLLAR BAR &amp;",
       "amount": 50.0,
@@ -595,7 +1063,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "6cc77037-4c22-4489-88cb-72637ad78bea",
+      "id": "67f42892-76b8-4fa2-86e3-bec09a71cb92",
       "date": "2026-01-16",
       "description": "GRIDDLE 24",
       "amount": 40.54,
@@ -604,7 +1072,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "2d70f80e-bceb-450c-b2c3-545900844223",
+      "id": "9514f7fc-e397-4026-906b-0bb9500e8bdd",
       "date": "2026-01-17",
       "description": "TST*SILVER DOLLAR BAR &amp;",
       "amount": 48.0,
@@ -613,7 +1081,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "633ffd93-a779-4faa-bc0e-5a3fe55d8187",
+      "id": "2847ac11-6bf6-4123-9da2-513c7ef41161",
       "date": "2026-01-17",
       "description": "LYFT   *1 RIDE 01-15",
       "amount": 65.99,
@@ -622,7 +1090,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "c0ffdadd-bd2a-41b1-93f5-babeb487f76a",
+      "id": "2f737c2a-838e-4fbc-84bf-a98df76b4a6a",
       "date": "2026-01-17",
       "description": "TST*SILVER DOLLAR BAR &amp;",
       "amount": 78.0,
@@ -631,7 +1099,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "256770a3-7d43-4013-ab51-de3cd59b1622",
+      "id": "15f631c6-f26e-4fdd-817c-bcb1d348ad5c",
       "date": "2026-01-14",
       "description": "WHOLEFDS KBS 10252",
       "amount": 108.19,
@@ -640,7 +1108,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "fe30421b-1d5c-493d-be63-8ebfb8417a7c",
+      "id": "0b6144aa-a317-4c56-9cd1-5a47d76bc9c6",
       "date": "2026-01-15",
       "description": "HUDSONNEWS  ST862",
       "amount": 18.75,
@@ -649,7 +1117,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "3b6cbd00-bb75-4468-baca-a8df01b631a7",
+      "id": "c772cecc-2d40-4fc7-959d-15f1da5a3695",
       "date": "2026-01-16",
       "description": "UBER   *TRIP",
       "amount": 100.96,
@@ -658,7 +1126,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "88c16dcf-9a70-4705-aa37-935283d12269",
+      "id": "03ac08ed-d5da-4911-8d68-167e5af0e338",
       "date": "2026-01-15",
       "description": "SP TERRAJACKSONWY",
       "amount": 246.1,
@@ -667,7 +1135,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "abe6d066-cf44-427f-b709-cd46823f18ba",
+      "id": "798252a5-e5f0-4536-aa4b-3f3593dad671",
       "date": "2026-01-15",
       "description": "SQ *BLACK TIE SKI RENTALS",
       "amount": 9.56,
@@ -676,7 +1144,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "3910bcdd-bd9a-4b49-95b4-5ba933e08c6d",
+      "id": "ea0afc11-385d-4ab5-bfed-4a18e1df2f0b",
       "date": "2026-01-15",
       "description": "ASPENS MARKET",
       "amount": 32.56,
@@ -685,7 +1153,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "ada26b5f-b99c-4199-8d37-0d3e90739bc9",
+      "id": "ac9630ff-0db8-433c-885e-8ea457e30f0f",
       "date": "2026-01-15",
       "description": "LA Fitness  *AnnualFee",
       "amount": 54.95,
@@ -694,7 +1162,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "fdbb5439-03d6-445e-9fd0-5332fa880ef8",
+      "id": "34ffa203-1525-4639-b460-b6440c85125c",
       "date": "2026-01-14",
       "description": "THE BOWERY BAY @LGA 705",
       "amount": 46.98,
@@ -703,7 +1171,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "6112c442-c7ac-4b5b-ad33-d3fb117296d7",
+      "id": "b844940c-8f11-4b59-b8ef-d01a7776009d",
       "date": "2026-01-15",
       "description": "ADVICEPAY.COM",
       "amount": 89.0,
@@ -712,7 +1180,7 @@
       "original_category": "Personal"
     },
     {
-      "id": "e21dd00f-ae41-4ce6-80c2-efd9a76effa4",
+      "id": "c8a51e0c-8442-4395-824b-a69b3f85de69",
       "date": "2026-01-14",
       "description": "USQA",
       "amount": 11.18,
@@ -721,7 +1189,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "3ad0f9dd-02b1-4fe6-8da0-ba01e48e19bf",
+      "id": "722dc854-d793-4c39-bdd4-9e1c43c327e1",
       "date": "2026-01-15",
       "description": "AMAZON MKTPL*B694J2QK3",
       "amount": 22.05,
@@ -730,7 +1198,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "0a492711-c8d1-42ee-b3b2-fe6ccd086788",
+      "id": "dde6dc82-ce5a-41a6-9c9a-c68b14b4b0df",
       "date": "2026-01-14",
       "description": "LPZOO.ORG",
       "amount": 365.0,
@@ -739,7 +1207,7 @@
       "original_category": "Education"
     },
     {
-      "id": "15e48bc9-ab58-494e-a0d2-6f6b0509b3c3",
+      "id": "69441d42-e768-46c4-a909-a1544c0cb45f",
       "date": "2026-01-14",
       "description": "THE BOWERY BAY @LGA 705",
       "amount": 2.78,
@@ -748,7 +1216,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "dcea1337-a647-4d9e-965f-271b4897a73f",
+      "id": "9a4eacb9-e9b9-4f04-afb4-b55c4776d232",
       "date": "2026-01-12",
       "description": "GALILEO LEARNING",
       "amount": 1055.0,
@@ -757,7 +1225,7 @@
       "original_category": "Education"
     },
     {
-      "id": "3db85a93-cd9f-418f-8925-6fe97cc94c41",
+      "id": "7acf7c8e-fa04-47fa-9a10-84b686ed57a5",
       "date": "2026-01-13",
       "description": "THE SINLESS TAN",
       "amount": 65.0,
@@ -766,7 +1234,7 @@
       "original_category": "Personal"
     },
     {
-      "id": "7bd0f2ec-c85d-4d0f-a032-536971510bcc",
+      "id": "b5744dc8-9b2d-498b-96ff-77ddeec8cfa3",
       "date": "2026-01-13",
       "description": "HELP.HBOMAX.COM",
       "amount": 10.99,
@@ -775,7 +1243,7 @@
       "original_category": "Entertainment"
     },
     {
-      "id": "0eb5cb38-a02b-41b2-896a-899889735454",
+      "id": "d569c095-a4ff-4a3b-b858-311d195fec49",
       "date": "2026-01-14",
       "description": "UBER   *TRIP",
       "amount": 8.27,
@@ -784,7 +1252,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "e46ec9aa-c580-4177-8a69-7d0b41ada73e",
+      "id": "695b87a9-5f89-4c4a-a030-e260049309e8",
       "date": "2026-01-14",
       "description": "D30651373",
       "amount": 113.82,
@@ -793,7 +1261,7 @@
       "original_category": "Personal"
     },
     {
-      "id": "e9c4209b-6d54-4b5e-836b-674bbac2cda4",
+      "id": "706b13ca-c5c8-420f-91dc-5b20afc21157",
       "date": "2026-01-13",
       "description": "TRYONCE.COM",
       "amount": 49.0,
@@ -802,7 +1270,7 @@
       "original_category": "Education"
     },
     {
-      "id": "ab5b95bc-408b-4ee0-a57e-381c7abfff2e",
+      "id": "2339b3dd-23c4-4472-970a-e250d05976aa",
       "date": "2026-01-13",
       "description": "TST* CUMIN",
       "amount": 26.71,
@@ -811,7 +1279,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "39067bf5-7bf0-404d-aac3-6859f472ab85",
+      "id": "f4af3616-103a-4dad-94d8-ca559cde167b",
       "date": "2026-01-14",
       "description": "UBER   *TRIP",
       "amount": 13.66,
@@ -820,7 +1288,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "f8f52ddb-8520-475c-a7a5-700632da8969",
+      "id": "17b5a9f5-9134-4580-9ca5-99464be36c32",
       "date": "2026-01-14",
       "description": "GOFNDME* HONORING JON",
       "amount": 235.0,
@@ -829,7 +1297,7 @@
       "original_category": "Gifts & Donations"
     },
     {
-      "id": "eab21c3c-9514-4ef2-992d-90ac50ad12c4",
+      "id": "d39f6ae1-9c09-4e2c-81bc-2035479e8ddf",
       "date": "2026-01-11",
       "description": "BEST LOCKERS",
       "amount": 12.0,
@@ -838,7 +1306,7 @@
       "original_category": "Personal"
     },
     {
-      "id": "1de6132e-f73b-4a86-86e1-250ef35297dd",
+      "id": "702e8e4e-8c17-4369-bf73-d17dc99b2de7",
       "date": "2026-01-11",
       "description": "WADSWORTH CITGO",
       "amount": 5.15,
@@ -847,7 +1315,7 @@
       "original_category": "Gas"
     },
     {
-      "id": "70e4c334-adab-43dd-9fd7-3100b254289e",
+      "id": "995423bd-d5bd-464f-91d9-be27f4eca994",
       "date": "2026-01-11",
       "description": "WHOLEFDS KBS 10252",
       "amount": 51.39,
@@ -856,7 +1324,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "21a092ab-c18c-4fe7-bd2b-60ada6dbd272",
+      "id": "a7cdddae-2433-4504-aac6-ff5c6e91451c",
       "date": "2026-01-11",
       "description": "WADSWORTH CITGO",
       "amount": 36.17,
@@ -865,7 +1333,7 @@
       "original_category": "Gas"
     },
     {
-      "id": "af4066e1-c21d-4825-ba8f-183ff7727708",
+      "id": "a9e102b9-a97d-4d56-bc4f-63c4dd87689b",
       "date": "2026-01-11",
       "description": "SUSHI NOVA",
       "amount": 55.77,
@@ -874,7 +1342,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "7c80db1a-86f4-4f64-acff-040607bbb5c6",
+      "id": "86c777b2-0d5a-4ac3-b74a-0dcc365b9acb",
       "date": "2026-01-11",
       "description": "Sky Zone Lincoln Park",
       "amount": 11.0,
@@ -883,7 +1351,7 @@
       "original_category": "Entertainment"
     },
     {
-      "id": "87ba7c01-09f5-467a-8825-dd4c6f9de3c8",
+      "id": "6d2f4d25-ca97-4cd9-9d5f-f34a1b30cd0c",
       "date": "2026-01-13",
       "description": "AMAZON MKTPL*K55FU2423",
       "amount": 7.71,
@@ -892,7 +1360,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "d88b99a8-643a-4255-be70-3bc0ca7d0745",
+      "id": "3cad1674-431f-4496-adfa-ac2fb1fd37bf",
       "date": "2026-01-12",
       "description": "CLASSPASS* MONTHLY",
       "amount": 99.0,
@@ -901,7 +1369,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "702f95b6-8dfe-4b91-b79f-c613cb7bd4aa",
+      "id": "c9a53fac-cf62-4f4a-976b-28affc578e35",
       "date": "2026-01-12",
       "description": "AMAZON MKTPL*EV92Q3833",
       "amount": 38.59,
@@ -910,7 +1378,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "bb3c0bfa-64f9-421c-abbc-4bdc720c0524",
+      "id": "00f1047c-2fe5-4754-8b95-523b677a935d",
       "date": "2026-01-12",
       "description": "Amazon Grocery Subscri",
       "amount": 9.99,
@@ -919,7 +1387,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "0e8873cd-7992-4f0e-b766-4e0119202b78",
+      "id": "b9162588-d58a-4881-b07f-512ddb8637d5",
       "date": "2026-01-13",
       "description": "AMAZON MKTPL*M36QI5QJ3",
       "amount": 16.53,
@@ -928,7 +1396,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "c176ca39-1c55-4214-8fd4-3acb1eb12986",
+      "id": "cca4778a-f5fd-47d5-beb4-c26afd0f8f4c",
       "date": "2026-01-12",
       "description": "OLDTOWNTRIANGLE.COM",
       "amount": 360.5,
@@ -937,7 +1405,7 @@
       "original_category": "Gifts & Donations"
     },
     {
-      "id": "38324ff9-a0be-4e58-ac48-f35a21150bf7",
+      "id": "d4220f41-3ed4-440f-840e-fe2eb6622b14",
       "date": "2026-01-10",
       "description": "PARK VIEW GROCER",
       "amount": 8.69,
@@ -946,7 +1414,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "f019b71e-2a57-45e0-8ff5-856abe8378da",
+      "id": "8b3ff8d4-97b8-4e96-bcd9-b27c16ddd0e7",
       "date": "2026-01-11",
       "description": "DD *DOORDASH CRAFTPIZZ",
       "amount": 125.57,
@@ -955,7 +1423,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "cfb5d304-9155-4854-9901-eb2e15c06ecd",
+      "id": "3edd85c1-2c07-44fd-b2a7-246a76beb6b2",
       "date": "2026-01-11",
       "description": "Amazon Tips*9W7UO87I3",
       "amount": 5.0,
@@ -964,7 +1432,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "3e79d5c3-6a97-4e84-b7dd-85931b85b317",
+      "id": "7ab8f3eb-2421-4adb-b65a-122dde6c6ef1",
       "date": "2026-01-10",
       "description": "WHOLEFDS KBS 10252",
       "amount": 69.75,
@@ -973,7 +1441,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "3ccf9415-365c-41f6-8471-215d46cd5209",
+      "id": "61055464-1b21-4e99-9330-25437149949c",
       "date": "2026-01-11",
       "description": "Amazon Tips*MM4HD55D3",
       "amount": 5.0,
@@ -982,7 +1450,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "feb8a305-d5a0-4a49-b1aa-b5830a726b53",
+      "id": "5c687a7a-26ca-43bf-90b5-a0a4c1b32a66",
       "date": "2026-01-10",
       "description": "Amazon.com*CR7872983",
       "amount": 7.08,
@@ -991,7 +1459,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "aefab2ef-4d90-4299-9e88-0fb75b36ded6",
+      "id": "9dbdf6e0-7a8e-49cc-ab7f-4a3431bca62d",
       "date": "2026-01-09",
       "description": "WHOLEFDS KBS 10252",
       "amount": 50.23,
@@ -1000,7 +1468,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "95ce0337-f37f-4913-8d57-dd37ab5f421a",
+      "id": "14f0bda4-cf66-4188-bc68-9fd77211e2a0",
       "date": "2026-01-09",
       "description": "Amazon.com*4K22T74X3",
       "amount": 54.24,
@@ -1009,7 +1477,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "f7bc362d-831f-4a66-98fd-731b06be0494",
+      "id": "6a8f2c2a-7902-4e8f-a514-ad713b376695",
       "date": "2026-01-09",
       "description": "J CREW",
       "amount": 299.18,
@@ -1018,7 +1486,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "f7e26961-6d8f-470d-bd04-adba12f1aaaf",
+      "id": "edd2ff58-ad53-4a8b-ad07-05863d05368d",
       "date": "2026-01-10",
       "description": "WILMOT MT SKI SCHOOL",
       "amount": 690.0,
@@ -1027,7 +1495,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "3967c41b-1950-4338-a0e6-c23bb29e1d37",
+      "id": "2730813a-c1d9-4578-8a0c-503cdb34a7fa",
       "date": "2026-01-10",
       "description": "UBER   *TRIP",
       "amount": 4.49,
@@ -1036,7 +1504,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "aa1b34ee-c52d-4085-ac97-f9cd444a8ab1",
+      "id": "d5fb93fa-4cb4-4ffd-9b9b-effc94bf8464",
       "date": "2026-01-09",
       "description": "WALGREENS #249",
       "amount": 18.17,
@@ -1045,7 +1513,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "056af0ea-9175-476f-8a5d-867a329c8565",
+      "id": "faa5adef-d81e-459f-9b9b-1b6720944605",
       "date": "2026-01-10",
       "description": "UBER   *EATS",
       "amount": 24.79,
@@ -1054,7 +1522,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "0bd1a156-2db4-4b53-b0ff-893411aa67ab",
+      "id": "2e6e9a83-adb3-49ab-9e5f-8c00272287f7",
       "date": "2026-01-10",
       "description": "Amazon.com*LF3957VE3",
       "amount": 23.25,
@@ -1063,7 +1531,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "a1f827a2-82fb-45d1-8f6d-f09a5707a7de",
+      "id": "dc25cc52-57d5-4c71-a477-3eae6b041381",
       "date": "2026-01-10",
       "description": "AMAZON MKTPL*0Z6032YY3",
       "amount": 11.34,
@@ -1072,7 +1540,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "63210e61-e811-495b-99b6-c77dae1acded",
+      "id": "5774caa6-b1f6-4465-9f9c-5fdb80ef724d",
       "date": "2026-01-10",
       "description": "IC* INSTACART",
       "amount": 35.82,
@@ -1081,7 +1549,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "bf2d3926-7238-4ca5-8d11-16eec78cbf87",
+      "id": "f8b2e5b3-1d31-4a38-bbd9-f921d323a053",
       "date": "2026-01-08",
       "description": "UNITED      0162362932525",
       "amount": 338.5,
@@ -1090,7 +1558,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "80c0c22c-a1cd-42e6-84f3-a0384908f82d",
+      "id": "50380dfd-9a5a-4559-87c0-44ca2941b6cc",
       "date": "2026-01-09",
       "description": "Wix.com 1214790245",
       "amount": 60.5,
@@ -1099,7 +1567,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "30f08457-0d3f-4908-8e3a-8a21328fe122",
+      "id": "313abf76-019e-4041-8326-a91196b7a21c",
       "date": "2026-01-09",
       "description": "Amazon.com*ZK75U6H93",
       "amount": 22.1,
@@ -1108,7 +1576,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "52f93c8c-222d-4c9f-ad13-6c62cf9de6f9",
+      "id": "063de4ad-43e2-47db-8f1b-57eb4d5b45e1",
       "date": "2026-01-07",
       "description": "PARK AVENUE TAVERN NYC",
       "amount": 129.5,
@@ -1117,7 +1585,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "36ca9a04-acc7-497a-a770-d9b91c2fe9a6",
+      "id": "b6acf435-30c5-4b50-a2ab-7cc509901cee",
       "date": "2026-01-07",
       "description": "UA INFLT    0164360147467",
       "amount": 8.0,
@@ -1126,7 +1594,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "aa50b8ca-3833-4a8a-8a10-740e8c29c7fa",
+      "id": "546ee1b7-2000-4302-9978-039c6a61f6d9",
       "date": "2026-01-09",
       "description": "AMAZON MKTPL*YW2BV0AO3",
       "amount": 28.94,
@@ -1135,7 +1603,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "2b6ee3d0-c636-48c0-9edf-87ea199ae9e5",
+      "id": "f2178bd9-d849-4bfa-b818-3f72de949b88",
       "date": "2026-01-08",
       "description": "JHMR ONLINE STORE",
       "amount": 479.0,
@@ -1144,7 +1612,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "b2f20f05-ccc1-4b53-a40a-3858ee562526",
+      "id": "25153a89-2faa-410c-8b12-f4bbfeeec1ef",
       "date": "2026-01-09",
       "description": "Amazon.com*PY3HX2G93",
       "amount": 7.56,
@@ -1153,7 +1621,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "245ded56-6b0f-4c99-8334-9ba7e5075843",
+      "id": "a13f12f2-1bbc-4da5-8585-7c440833997b",
       "date": "2026-01-08",
       "description": "POCKETS N LINCOLN",
       "amount": 43.74,
@@ -1162,7 +1630,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "c9576e9c-fcc5-4b65-b125-3682807e68e2",
+      "id": "133c58db-77aa-45d3-af45-f6561d0f255d",
       "date": "2026-01-08",
       "description": "UBER   *EATS",
       "amount": 246.32,
@@ -1171,7 +1639,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "0e903d10-0ade-41ed-9fcc-ff854ca009a6",
+      "id": "d8c7db6a-cdb6-4bd4-92c5-ccf4f1b738af",
       "date": "2026-01-07",
       "description": "JEWEL OSCO 3441",
       "amount": 50.13,
@@ -1180,7 +1648,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "7746009f-7b7d-4324-9cf9-456855ff0aa8",
+      "id": "c7fa3111-16c9-43f5-9752-b4a4ce40c5c0",
       "date": "2026-01-08",
       "description": "Kindle Svcs*9P46A9N13",
       "amount": 19.99,
@@ -1189,7 +1657,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "406ec930-56aa-4f02-928e-35f16d9c9d90",
+      "id": "b9a36cb3-f9ae-452c-adc1-3ca0343d21d1",
       "date": "2026-01-09",
       "description": "AMAZON MKTPL*N43GD8043",
       "amount": 44.04,
@@ -1198,7 +1666,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "5d50e058-6efb-46d9-b44b-38795a93572e",
+      "id": "b628c3fe-65b6-4b22-acd1-fb7561e68f68",
       "date": "2026-01-08",
       "description": "SP LASHIFY INC",
       "amount": 78.12,
@@ -1207,7 +1675,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "0767bf37-41fb-4fab-b926-8d7ef69b1035",
+      "id": "5d314563-76e9-4984-8f44-4473c5fc2035",
       "date": "2026-01-09",
       "description": "LYFT   *1 RIDE 01-07",
       "amount": 49.96,
@@ -1216,7 +1684,7 @@
       "original_category": "Automotive"
     },
     {
-      "id": "a237f21d-2e2d-44b1-b96d-441c62d9c027",
+      "id": "f2b5c798-8be0-44f2-946f-00a05792095b",
       "date": "2026-01-09",
       "description": "Amazon.com*P287A6303",
       "amount": 24.19,
@@ -1225,7 +1693,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "8aba2175-9b67-4279-b7cf-d1469aa08e6a",
+      "id": "ea0ca389-9588-43ff-b4f3-2b4d0e32dd71",
       "date": "2026-01-09",
       "description": "SP LASHIFY INC",
       "amount": 24.81,
@@ -1234,7 +1702,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "b1b5988b-261b-4ff6-bcbc-951153847131",
+      "id": "e8d9ac81-4191-4d80-86ff-6af91b39cae0",
       "date": "2026-01-07",
       "description": "Sezane",
       "amount": 255.0,
@@ -1243,7 +1711,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "6af09981-5ea7-46cf-8a7a-2649c9e546d6",
+      "id": "cc004329-bfba-4003-b487-4a660aeb697b",
       "date": "2026-01-07",
       "description": "SP VIX SWIMWEAR INC",
       "amount": 1151.1,
@@ -1252,7 +1720,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "17c0442a-75b2-4732-984b-59451e9dc87a",
+      "id": "0b314bdd-2af0-4b53-89d8-647071f31716",
       "date": "2026-01-07",
       "description": "SPOTHERO 844-356-8054",
       "amount": 31.8,
@@ -1261,7 +1729,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "a019c462-2e09-4754-ae88-991234e3b357",
+      "id": "c66643d7-0f26-4977-873b-4445daa052ec",
       "date": "2026-01-07",
       "description": "UBER   *TRIP",
       "amount": 18.82,
@@ -1270,7 +1738,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "2b6b4511-8786-4787-8575-1cda570875fd",
+      "id": "824c7572-51f9-4d95-a76b-34929689e396",
       "date": "2026-01-07",
       "description": "APPLE.COM/BILL",
       "amount": 9.99,
@@ -1279,7 +1747,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "adbc9ac4-bfa2-442a-98ff-eeb2700800ec",
+      "id": "eecbc993-e588-4132-9754-a91dbdb31142",
       "date": "2026-01-07",
       "description": "APPLE.COM/BILL",
       "amount": 6.6,
@@ -1288,7 +1756,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "2c034e90-094c-480c-84de-0df6e724430f",
+      "id": "f532e331-aff4-4d96-86fc-393fb59a9c89",
       "date": "2026-01-07",
       "description": "Kindle Unltd*ZQ0BM5CD3",
       "amount": 11.99,
@@ -1297,7 +1765,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "7d1a09db-835a-4d42-aa7e-fce73898bd31",
+      "id": "6298056e-e3cf-417d-8c60-44d32af90d5e",
       "date": "2026-01-07",
       "description": "Amazon Tips*EU54N7T63",
       "amount": 10.0,
@@ -1306,7 +1774,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "ed899b46-afa0-4dee-9701-76f72660d0bd",
+      "id": "5f070013-ee33-40d5-8382-32ded4ce144b",
       "date": "2026-01-06",
       "description": "Amazon.com*6N8WE91G3",
       "amount": 6.24,
@@ -1315,7 +1783,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "86e83f15-e25a-45b8-98c7-c1412a1f4213",
+      "id": "0e474351-8325-406a-910f-216ff29aa90a",
       "date": "2026-01-06",
       "description": "PARK VIEW GROCER",
       "amount": 5.99,
@@ -1324,7 +1792,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "52d25365-a212-40f1-a7e4-316ddb6d5dbb",
+      "id": "ee77fa44-7da2-4a2b-922e-ccff4622b7b1",
       "date": "2026-01-06",
       "description": "AMAZON MKTPL*EE42N23Y3",
       "amount": 37.45,
@@ -1333,7 +1801,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "13239667-3f29-4870-bc0c-2c301cd3bfa7",
+      "id": "ab79ad31-c255-4ef6-b3fe-2e6745bf87c0",
       "date": "2026-01-06",
       "description": "Amazon.com*WN3P623J3",
       "amount": 32.99,
@@ -1342,7 +1810,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "42bf9d92-edf7-420e-97b1-37134cd9c114",
+      "id": "99c2d74b-fd2f-4b82-a43e-96601fe0af5b",
       "date": "2026-01-06",
       "description": "VENTRA ACCOUNT",
       "amount": 2.25,
@@ -1351,7 +1819,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "0713faa4-486c-4f7e-94c6-d64252852578",
+      "id": "b175b800-2686-4be7-8758-d5fd5e724137",
       "date": "2026-01-07",
       "description": "Kindle Svcs*Y76WB13T3",
       "amount": 0.99,
@@ -1360,7 +1828,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "295c2a58-77c3-4eae-8bfe-d149ec8044ea",
+      "id": "eec8d70d-299d-4b15-921e-362fea25b13d",
       "date": "2026-01-06",
       "description": "Amazon.com*AC7SI91O3",
       "amount": 10.99,
@@ -1369,7 +1837,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "1ed6a345-b06f-439e-9c9b-fa1699e72a42",
+      "id": "70591245-7098-4c96-b8ac-946bcbc1c878",
       "date": "2026-01-06",
       "description": "WALGREENS #249",
       "amount": 1.32,
@@ -1378,7 +1846,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "244be164-8b98-4fd2-a647-a683737ef49c",
+      "id": "b29d641b-45f5-44af-820c-85a013b1bf31",
       "date": "2026-01-06",
       "description": "THE REALREAL  INC",
       "amount": 1002.12,
@@ -1387,7 +1855,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "d64eb8d3-2846-4579-aa4e-c83e81619791",
+      "id": "48a2eeb0-4457-43cb-a3e5-590be0f19e8e",
       "date": "2026-01-06",
       "description": "DD *DOORDASH CUMIN",
       "amount": 35.95,
@@ -1396,7 +1864,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "243dffaf-a424-4433-a5cd-a61dfd066e8c",
+      "id": "67398062-5f3b-4a65-85ce-f70f44173886",
       "date": "2026-01-05",
       "description": "PORTA HOTEL DEL LAGO",
       "amount": 46.34,
@@ -1405,7 +1873,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "5c0d6dfc-3de2-41ed-938a-954b8897f459",
+      "id": "be151b58-57b9-45dc-a228-e4894502bef8",
       "date": "2026-01-05",
       "description": "CURB CHI TAXI",
       "amount": 55.5,
@@ -1414,7 +1882,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "6c3fcf76-e47d-4182-a9f4-593cbe73f188",
+      "id": "11aa9c70-e4e0-4b1f-82f8-7434be79aa4b",
       "date": "2026-01-04",
       "description": "KARMELA S",
       "amount": 83.29,
@@ -1423,7 +1891,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "0016b784-1e24-4d9c-951c-7328d60804c7",
+      "id": "c5acc6d0-5090-4997-a46b-71d523585f18",
       "date": "2026-01-05",
       "description": "CAFE GITANE AEROPUERTO",
       "amount": 17.62,
@@ -1432,7 +1900,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "91f7e837-3076-4a9c-a5cd-8b657c77ce15",
+      "id": "ca3b526b-8086-4277-85e4-5769989cb649",
       "date": "2026-01-05",
       "description": "Amazon.com*7N4696TO3",
       "amount": 22.02,
@@ -1441,7 +1909,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "81d7b5b6-9507-4449-86e7-e7fa9913b9fb",
+      "id": "a13d0c3d-7a51-4272-9181-bb9beeaa1310",
       "date": "2026-01-06",
       "description": "LA FITNESS",
       "amount": 37.95,
@@ -1450,7 +1918,7 @@
       "original_category": "Health & Wellness"
     },
     {
-      "id": "62727126-5d95-4594-a5bb-be26fadf9dd0",
+      "id": "5f890ce5-ce18-4818-b17a-8cb81b3efae9",
       "date": "2026-01-05",
       "description": "MONJA BLANCA",
       "amount": 75.72,
@@ -1459,7 +1927,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "8109526d-de94-465a-9aab-07c5e0cf1b0d",
+      "id": "00c0545b-6290-49c0-ad83-282e51a27adc",
       "date": "2026-01-05",
       "description": "Amazon.com*YA9380693",
       "amount": 363.89,
@@ -1468,7 +1936,7 @@
       "original_category": "Groceries"
     },
     {
-      "id": "5ea520b7-7a86-495a-a1a8-3365635a00d3",
+      "id": "29a8cff7-c269-48ee-b2bb-33489d692757",
       "date": "2026-01-05",
       "description": "Amazon.com*TM5EI0PP3",
       "amount": 33.06,
@@ -1477,7 +1945,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "a928ab34-3434-48c2-a193-2ecc7f72652d",
+      "id": "d8abe418-5711-412f-a34b-28b9e108f7a0",
       "date": "2026-01-06",
       "description": "REVOLVE",
       "amount": 2116.81,
@@ -1486,7 +1954,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "9ec6d08d-af56-458c-87a9-77c5555bc2a7",
+      "id": "09721725-8ff5-4b3a-8269-fadcef2f375f",
       "date": "2026-01-01",
       "description": "GLOBAL VIA RUTA 27",
       "amount": 0.99,
@@ -1495,7 +1963,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "85d53dfd-14d8-4aa4-ae5a-9d3bb52d3e49",
+      "id": "1470fac5-9800-416f-ae43-3438cfaaf061",
       "date": "2026-01-03",
       "description": "FARMACOSTO ANTIGUA",
       "amount": 9.33,
@@ -1504,7 +1972,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "6ce8f59e-55f9-484f-a76d-ac5d8347038b",
+      "id": "6d68c4b8-b5fb-40dd-95be-6a3d3fc15c71",
       "date": "2026-01-04",
       "description": "WORLDCENTRALKITCH",
       "amount": 100.0,
@@ -1513,7 +1981,7 @@
       "original_category": "Gifts & Donations"
     },
     {
-      "id": "8078adcf-c1e3-4d79-b44d-61fe1b4938da",
+      "id": "f6a32aa5-4666-409c-8f26-f7a01550af1c",
       "date": "2026-01-04",
       "description": "CASA DE TEJIDOS",
       "amount": 56.79,
@@ -1522,7 +1990,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "df9568a4-f393-4ec4-aeaa-904b1cc09039",
+      "id": "336ba2fc-f235-4cd5-a7d9-4c89c5e8052f",
       "date": "2026-01-05",
       "description": "Farfetch",
       "amount": 229.33,
@@ -1531,7 +1999,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "26b25d2d-9fe3-43c4-8a21-6e962a2e5b8a",
+      "id": "0df3766f-53ec-4b1d-a4e1-a151341a760f",
       "date": "2026-01-03",
       "description": "FARMACOSTO ANTIGUA",
       "amount": 21.88,
@@ -1540,7 +2008,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "67faadba-d695-4dea-9207-df59862a0946",
+      "id": "3c390942-a698-426d-b181-6a6003f4bd5b",
       "date": "2026-01-03",
       "description": "RESTAURANTE TUSCANI",
       "amount": 47.91,
@@ -1549,7 +2017,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "cef73208-52ae-4e82-8b1d-6aa250c56dac",
+      "id": "a4251c22-13b0-4fa1-bab7-5f41702a0122",
       "date": "2026-01-03",
       "description": "RESERVA NATURAL ATITLAN",
       "amount": 32.64,
@@ -1558,7 +2026,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "3514b982-bf49-4604-bebd-16d1f7e77c65",
+      "id": "7745a502-d6fd-49fe-b3d5-818f217e6f94",
       "date": "2026-01-03",
       "description": "CASA FAUSTINA",
       "amount": 136.88,
@@ -1567,7 +2035,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "9c72a7ac-515f-4dd6-bdb4-76bc25e8bca2",
+      "id": "1843189f-5401-48a3-8132-8a7c6bae4bca",
       "date": "2026-01-02",
       "description": "APPLE.COM/BILL",
       "amount": 24.78,
@@ -1576,7 +2044,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "e69c362f-6411-42f5-b2b9-8c287c76da26",
+      "id": "f9581a39-6b2a-4f34-bd43-def54f841f1c",
       "date": "2026-01-01",
       "description": "UBER*EATS",
       "amount": 74.19,
@@ -1585,7 +2053,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "a0aef591-7ad9-46fb-b315-745b0cf7331c",
+      "id": "db63c7fd-b837-4768-8542-1a9ef9ccc5c3",
       "date": "2026-01-02",
       "description": "ARTESANAL ANTIGUA",
       "amount": 18.28,
@@ -1594,7 +2062,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "598aa05d-3f2a-40be-b99d-de7a14e703f5",
+      "id": "6e80bed5-cdbe-4fea-8969-1c30246a740c",
       "date": "2026-01-02",
       "description": "SMOKE",
       "amount": 42.3,
@@ -1603,7 +2071,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "82945d08-371c-45af-b004-6f1359f44aa9",
+      "id": "19b72d33-d97a-401b-b5eb-0a0eaa323bac",
       "date": "2026-01-03",
       "description": "PORTA H DL LAGO RST CAKCH",
       "amount": 54.83,
@@ -1612,7 +2080,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "003a2f6c-131d-485f-bd0b-4aa602fb98f8",
+      "id": "b236b659-582c-4f6f-9bb5-74f3b4f07b9e",
       "date": "2026-01-01",
       "description": "IMPERIAL STORE",
       "amount": 36.44,
@@ -1621,7 +2089,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "58b92635-acdf-4bd3-99d5-8437a5a13045",
+      "id": "3967fcb4-f250-4658-932b-9491a223ea33",
       "date": "2026-01-03",
       "description": "NUULY",
       "amount": 22.05,
@@ -1630,7 +2098,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "d66376a5-1f3a-425b-9b7a-1ac5f0c0ec38",
+      "id": "32d267c1-d14c-4c31-9a06-3e2b7a7cdecb",
       "date": "2026-01-01",
       "description": "TIENDA CPK ATO SJO PUERTA",
       "amount": 71.4,
@@ -1639,7 +2107,7 @@
       "original_category": "Shopping"
     },
     {
-      "id": "0e210606-636e-4eba-9bb3-6701fb850ef3",
+      "id": "b1c6cf4d-af82-4c5b-b6bf-bf3fc52aded6",
       "date": "2026-01-04",
       "description": "Spotify USA",
       "amount": 13.22,
@@ -1648,7 +2116,7 @@
       "original_category": "Bills & Utilities"
     },
     {
-      "id": "fc8fa0b6-425b-4c0d-9a11-1ce06ca02977",
+      "id": "26e9de99-89df-4904-8920-31419233e9ec",
       "date": "2026-01-02",
       "description": "SMOKE",
       "amount": 18.67,
@@ -1657,7 +2125,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "3cc6a2b5-1991-4a54-9aee-927b3ced32db",
+      "id": "b98f0c84-d73f-4b2a-a305-04f95611c0e0",
       "date": "2026-01-01",
       "description": "AMAZON PRIME*NZ44P5J43",
       "amount": 14.99,
@@ -1666,7 +2134,7 @@
       "original_category": "Bills & Utilities"
     },
     {
-      "id": "e1bad6a0-e874-4318-a3b5-8b9416d5173b",
+      "id": "c56cf8c3-a2c6-47ff-8311-e4189bbf07b7",
       "date": "2026-01-01",
       "description": "DISCOM RIO GRANDE",
       "amount": 50.43,
@@ -1675,7 +2143,7 @@
       "original_category": "Gas"
     },
     {
-      "id": "b99fd5f9-d8da-47f7-882f-cf692e19ff9f",
+      "id": "d392422e-6970-422d-b5fa-a2b7a754780e",
       "date": "2026-01-01",
       "description": "NEW YORK MAGAZINE",
       "amount": 8.0,
@@ -1684,7 +2152,7 @@
       "original_category": "Professional Services"
     },
     {
-      "id": "bd6b5990-c701-40d5-9c5f-456c5091cf53",
+      "id": "b1e8d2bc-0d70-439b-aef2-4f104f5cb21b",
       "date": "2026-01-01",
       "description": "LACSA AEROPUERTO JUAN SAN",
       "amount": 210.0,
@@ -1693,7 +2161,7 @@
       "original_category": "Travel"
     },
     {
-      "id": "4e782a2b-7a6b-484e-ad42-e73c79f3d4bb",
+      "id": "efb14e3b-8a11-4f64-97a6-146caa958c29",
       "date": "2025-12-30",
       "description": "RESTAURANTE CATALINAS",
       "amount": 28.85,
@@ -1702,7 +2170,7 @@
       "original_category": "Food & Drink"
     },
     {
-      "id": "c6f15c0d-3441-4959-9d9c-237fb8df60c5",
+      "id": "c8dac3f9-452b-4c2d-bff5-819aef755d8d",
       "date": "2025-12-31",
       "description": "MINISUPER VIA FLAMINGO",
       "amount": 36.08,
@@ -1711,379 +2179,10 @@
       "original_category": "Groceries"
     },
     {
-      "id": "171d9e08-5e68-4258-8b38-b16c3930d6c6",
+      "id": "482f2485-32c3-4266-9045-061f61f5ef21",
       "date": "2025-12-31",
       "description": "RENT THE RUNWAY",
       "amount": 218.67,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "2dfad590-47ac-4689-9c27-8206ad94968c",
-      "date": "2025-12-30",
-      "description": "AMAZON MKTPL*4E8RZ9W83",
-      "amount": 110.19,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "e410a1a5-d8d6-45be-98f9-e001222ad72b",
-      "date": "2025-12-29",
-      "description": "SUPER PURA VIDA",
-      "amount": 31.66,
-      "category": "Groceries",
-      "subcategory": null,
-      "original_category": "Groceries"
-    },
-    {
-      "id": "29555266-d4b7-461c-9fa4-2ff21f8e64c5",
-      "date": "2025-12-28",
-      "description": "SUPERMERCADO MASSAI",
-      "amount": 332.11,
-      "category": "Groceries",
-      "subcategory": null,
-      "original_category": "Groceries"
-    },
-    {
-      "id": "79b2db58-15b7-4785-9b2d-314133f8957a",
-      "date": "2025-12-28",
-      "description": "CAFE Y BAKERY PATIO ATO L",
-      "amount": 17.65,
-      "category": "Food & Drink",
-      "subcategory": null,
-      "original_category": "Food & Drink"
-    },
-    {
-      "id": "881141b6-d62d-4efd-a3eb-ceac343775f6",
-      "date": "2025-12-28",
-      "description": "AMAZON PRIME*C47508PV3",
-      "amount": 139.0,
-      "category": "Bills & Utilities",
-      "subcategory": null,
-      "original_category": "Bills & Utilities"
-    },
-    {
-      "id": "eded1d51-8d75-4f19-b8d4-73e0b2068f24",
-      "date": "2025-12-27",
-      "description": "CHICAGO PARK DISTRICT",
-      "amount": 24.42,
-      "category": "Bills & Utilities",
-      "subcategory": null,
-      "original_category": "Bills & Utilities"
-    },
-    {
-      "id": "b471a7fa-8c35-4de2-aca5-fe533eedeea9",
-      "date": "2025-12-28",
-      "description": "NYTIMES DISC*",
-      "amount": 4.0,
-      "category": "Bills & Utilities",
-      "subcategory": null,
-      "original_category": "Bills & Utilities"
-    },
-    {
-      "id": "71a17b6e-daf1-4fab-bccc-caa43f903205",
-      "date": "2025-12-28",
-      "description": "CNN NEWS ST857",
-      "amount": 17.32,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "807544f5-80c6-48cf-8129-66a9d16b8bf8",
-      "date": "2025-12-27",
-      "description": "THE SINLESS TAN",
-      "amount": 65.0,
-      "category": "Personal",
-      "subcategory": null,
-      "original_category": "Personal"
-    },
-    {
-      "id": "be64e59e-258b-469a-b4af-315ce02a8522",
-      "date": "2025-12-28",
-      "description": "SIXT RENTA CAR LIBERIA",
-      "amount": 587.01,
-      "category": "Travel",
-      "subcategory": null,
-      "original_category": "Travel"
-    },
-    {
-      "id": "f44324ea-d28a-40a7-99f9-10d769dbc94e",
-      "date": "2025-12-29",
-      "description": "Miele Inc.",
-      "amount": 29.77,
-      "category": "Home",
-      "subcategory": null,
-      "original_category": "Home"
-    },
-    {
-      "id": "e6087629-7df9-49f8-a283-48f9aedee1ce",
-      "date": "2025-12-26",
-      "description": "JARASA KABOB",
-      "amount": 20.99,
-      "category": "Food & Drink",
-      "subcategory": null,
-      "original_category": "Food & Drink"
-    },
-    {
-      "id": "86b7c21a-9561-4543-98e2-a8a89987de09",
-      "date": "2025-12-28",
-      "description": "UBER   *TRIP",
-      "amount": 90.32,
-      "category": "Travel",
-      "subcategory": null,
-      "original_category": "Travel"
-    },
-    {
-      "id": "5a5964a1-55a7-45b6-aeb4-81cdcf4adfe0",
-      "date": "2025-12-27",
-      "description": "CVS/PHARMACY #08698",
-      "amount": 25.54,
-      "category": "Health & Wellness",
-      "subcategory": null,
-      "original_category": "Health & Wellness"
-    },
-    {
-      "id": "8c83f12d-2603-417c-a4cb-4dec4ae94531",
-      "date": "2025-12-27",
-      "description": "Kindle Svcs*IH4B618U3",
-      "amount": 12.99,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "cb68a326-7a22-4f1d-9ac2-f989e3edc8f6",
-      "date": "2025-12-27",
-      "description": "Kindle Svcs*YV9R625R3",
-      "amount": 10.98,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "5e788810-1f11-4daf-a665-e6b44e37e192",
-      "date": "2025-12-27",
-      "description": "CVS/PHARMACY #08698",
-      "amount": 43.3,
-      "category": "Health & Wellness",
-      "subcategory": null,
-      "original_category": "Health & Wellness"
-    },
-    {
-      "id": "d9cb43d8-29b0-418d-abac-243fbb8ebf25",
-      "date": "2025-12-26",
-      "description": "KIDS EMPIRE DEERFIELD",
-      "amount": 45.8,
-      "category": "Entertainment",
-      "subcategory": null,
-      "original_category": "Entertainment"
-    },
-    {
-      "id": "55ebacc0-2a11-41d2-a57e-28e66ba14114",
-      "date": "2025-12-26",
-      "description": "TARGET        00026138",
-      "amount": 24.62,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "0b9d13cb-a5f3-4c3d-aa81-9a40b45f8562",
-      "date": "2025-12-27",
-      "description": "UBER   *EATS",
-      "amount": 206.02,
-      "category": "Food & Drink",
-      "subcategory": null,
-      "original_category": "Food & Drink"
-    },
-    {
-      "id": "28ae7ef5-a2d4-455f-bec3-aa36c3624ed0",
-      "date": "2025-12-27",
-      "description": "Kindle Svcs*TS85J1A73",
-      "amount": 7.99,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "0b8a83f9-729a-454f-93ab-08f95a5e138b",
-      "date": "2025-12-26",
-      "description": "APPLE.COM/BILL",
-      "amount": 15.41,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "5ea25c9c-53e9-47b9-a6e0-f8fccd7d529d",
-      "date": "2025-12-27",
-      "description": "UBER   *TRIP",
-      "amount": 12.92,
-      "category": "Travel",
-      "subcategory": null,
-      "original_category": "Travel"
-    },
-    {
-      "id": "e12b9de8-0bcc-4f51-b310-455b7f85d6a7",
-      "date": "2025-12-26",
-      "description": "SQ *THE CHEESE MAVEN CHIC",
-      "amount": 250.0,
-      "category": "Food & Drink",
-      "subcategory": null,
-      "original_category": "Food & Drink"
-    },
-    {
-      "id": "6237bfc7-29b4-425c-88d3-13281918833e",
-      "date": "2025-12-28",
-      "description": "LYFT   *1 RIDE 12-26",
-      "amount": 29.43,
-      "category": "Travel",
-      "subcategory": null,
-      "original_category": "Travel"
-    },
-    {
-      "id": "64aeb184-bdf8-4f2a-8dc6-e7ede02e7333",
-      "date": "2025-12-26",
-      "description": "OAKTON COMMUNITY CENTER",
-      "amount": 21.0,
-      "category": "Entertainment",
-      "subcategory": null,
-      "original_category": "Entertainment"
-    },
-    {
-      "id": "e883b0c8-1472-4abc-98f5-9b6b6e3ba9a2",
-      "date": "2025-12-27",
-      "description": "Kindle Svcs*485C98QL3",
-      "amount": 9.99,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "4fba6d02-7bdc-4391-9f57-414b5f2cbba8",
-      "date": "2025-12-27",
-      "description": "UBER TRIP* TRIP",
-      "amount": 7.91,
-      "category": "Travel",
-      "subcategory": null,
-      "original_category": "Travel"
-    },
-    {
-      "id": "045644cc-0288-45d8-a6b0-259b864a65f2",
-      "date": "2025-12-27",
-      "description": "WALGREENS #249",
-      "amount": 15.45,
-      "category": "Health & Wellness",
-      "subcategory": null,
-      "original_category": "Health & Wellness"
-    },
-    {
-      "id": "4c7e4fc1-f2d9-4fbc-b9c5-83622fd4f3be",
-      "date": "2025-12-27",
-      "description": "Sky Zone Evanston",
-      "amount": 31.96,
-      "category": "Entertainment",
-      "subcategory": null,
-      "original_category": "Entertainment"
-    },
-    {
-      "id": "9ccb3ddd-1c89-4f9e-87bf-80106abd54e3",
-      "date": "2025-12-26",
-      "description": "CTLP*SUNSTAR VENDING I",
-      "amount": 8.0,
-      "category": "Entertainment",
-      "subcategory": null,
-      "original_category": "Entertainment"
-    },
-    {
-      "id": "80f84b4a-bd5e-4749-b1bc-831a4e2d7653",
-      "date": "2025-12-28",
-      "description": "UBER   *EATS",
-      "amount": 20.9,
-      "category": "Food & Drink",
-      "subcategory": null,
-      "original_category": "Food & Drink"
-    },
-    {
-      "id": "9c98bd98-341a-45f0-b5c9-20a565bc8dd6",
-      "date": "2025-12-28",
-      "description": "FWRD",
-      "amount": 131.2,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "1797c468-f2a2-42de-9c74-856b890165ba",
-      "date": "2025-12-27",
-      "description": "CVS/PHARMACY #08698",
-      "amount": 14.83,
-      "category": "Health & Wellness",
-      "subcategory": null,
-      "original_category": "Health & Wellness"
-    },
-    {
-      "id": "0874c9aa-fe20-484e-8cf2-55240e9f238a",
-      "date": "2025-12-27",
-      "description": "Sky Zone Evanston",
-      "amount": 63.92,
-      "category": "Entertainment",
-      "subcategory": null,
-      "original_category": "Entertainment"
-    },
-    {
-      "id": "c2e6c9eb-94a3-4326-a4b3-cf7b188c6ee1",
-      "date": "2025-12-26",
-      "description": "SP NILI LOTAN",
-      "amount": 429.98,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "255b98d0-6d98-40fe-bf85-6c408bb96819",
-      "date": "2025-12-25",
-      "description": "SP LASHIFY INC",
-      "amount": 74.42,
-      "category": "Shopping",
-      "subcategory": null,
-      "original_category": "Shopping"
-    },
-    {
-      "id": "7b218358-c296-44e8-98a4-6ca209757c26",
-      "date": "2025-12-24",
-      "description": "LIFE TIME CAFE 128Q30",
-      "amount": 26.82,
-      "category": "Food & Drink",
-      "subcategory": null,
-      "original_category": "Food & Drink"
-    },
-    {
-      "id": "02d96a5c-15c9-4a50-8d33-dc442b9cb73f",
-      "date": "2025-12-24",
-      "description": "LIFE TIME CAFE 128Q30",
-      "amount": 13.52,
-      "category": "Food & Drink",
-      "subcategory": null,
-      "original_category": "Food & Drink"
-    },
-    {
-      "id": "24b349a8-68b5-48e7-a3eb-86d999556058",
-      "date": "2025-12-25",
-      "description": "ACT*Chicago Park Distr",
-      "amount": 93.08,
-      "category": "Entertainment",
-      "subcategory": null,
-      "original_category": "Entertainment"
-    },
-    {
-      "id": "cb30ee4a-5ffc-468d-a43a-3862130809d5",
-      "date": "2025-12-25",
-      "description": "NUULY",
-      "amount": 28.38,
       "category": "Shopping",
       "subcategory": null,
       "original_category": "Shopping"
