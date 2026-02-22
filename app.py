@@ -171,6 +171,19 @@ def api_delete_transaction():
     return jsonify({"error": "Not found"}), 404
 
 
+@app.route("/api/delete-many", methods=["POST"])
+@login_required
+def api_delete_many():
+    ids = set(request.get_json().get("ids", []))
+    data, sha = store.get_data()
+    before = len(data["transactions"])
+    data["transactions"] = [t for t in data["transactions"] if t["id"] not in ids]
+    removed = before - len(data["transactions"])
+    if removed:
+        store.save_data(data, sha)
+    return jsonify({"success": True, "removed": removed})
+
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def _filter(txns, year, month):
@@ -202,9 +215,14 @@ def _parse_chase_csv(content):
             except ValueError:
                 date = date_raw
 
+            post_raw = row.get("Post Date", "").strip()
+            try:    post_date = datetime.strptime(post_raw, "%m/%d/%Y").strftime("%Y-%m-%d")
+            except: post_date = post_raw
+
             txns.append({
                 "id":                str(uuid.uuid4()),
                 "date":              date,
+                "post_date":         post_date,
                 "description":       description,
                 "amount":            amount,
                 "category":          category,

@@ -115,8 +115,14 @@
 
   <!-- Transactions -->
   <div class="card p-3">
-    <div class="d-flex align-items-center justify-content-between mb-3">
-      <h6 class="fw-bold mb-0">Transactions</h6>
+    <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <h6 class="fw-bold mb-0">Transactions</h6>
+        <span id="selCount" class="badge rounded-pill" style="background:#7c3aed;display:none"></span>
+        <button id="deleteSelBtn" class="btn btn-sm btn-danger" style="display:none" onclick="deleteSelected()">
+          <i class="fa fa-trash-alt me-1"></i>Delete Selected
+        </button>
+      </div>
       <select id="catFilter" class="form-select form-select-sm" style="max-width:200px" onchange="loadTransactions()">
         <option value="all">All categories</option>
         {% for cat in category_names %}
@@ -128,7 +134,8 @@
       <table class="table txn-table mb-0">
         <thead>
           <tr>
-            <th>Date</th><th>Description</th><th class="text-end">Amount</th>
+            <th style="width:36px"><input type="checkbox" id="selectAll" onchange="toggleSelectAll(this)" title="Select all"/></th>
+            <th>Date</th><th>Posted</th><th>Description</th><th class="text-end">Amount</th>
             <th>Category</th><th>Subcategory</th><th></th>
           </tr>
         </thead>
@@ -379,8 +386,10 @@ function renderTransactions(txns) {
     const subOptions  = hasSubs ? (cat.subcategories||[]).map(s=>`<option value="${escHtml(s)}" ${s===t.subcategory?'selected':''}>${escHtml(s)}</option>`).join("") : "";
 
     html += `<tr id="txn-${t.id}">
+      <td><input type="checkbox" class="txn-cb" value="${t.id}" onchange="updateSelCount()"/></td>
       <td style="white-space:nowrap">${t.date}</td>
-      <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escHtml(t.description)}">${escHtml(t.description)}</td>
+      <td style="white-space:nowrap;color:#9ca3af;font-size:.78rem">${t.post_date||'—'}</td>
+      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escHtml(t.description)}">${escHtml(t.description)}</td>
       <td class="text-end fw-semibold">${fmtMoney(t.amount)}</td>
       <td>
         <select class="cat-select" onchange="recategorize('${t.id}', this.value, null)">
@@ -400,6 +409,7 @@ function renderTransactions(txns) {
     </tr>`;
   }
   tbody.innerHTML = html;
+  updateSelCount();
 }
 
 function renderPager(total, page, perPage) {
@@ -454,6 +464,45 @@ async function deleteTransaction(id) {
   await fetch("/api/delete-transaction", {
     method:"POST", headers:{"Content-Type":"application/json"},
     body: JSON.stringify({id})
+  });
+  loadChart();
+  loadTransactions(currentPage);
+}
+
+function toggleSelectAll(cb) {
+  document.querySelectorAll(".txn-cb").forEach(el => el.checked = cb.checked);
+  updateSelCount();
+}
+
+function updateSelCount() {
+  const checked = document.querySelectorAll(".txn-cb:checked");
+  const total   = document.querySelectorAll(".txn-cb");
+  const selCountEl   = document.getElementById("selCount");
+  const deleteSelBtn = document.getElementById("deleteSelBtn");
+  const selectAll    = document.getElementById("selectAll");
+
+  if (checked.length > 0) {
+    selCountEl.textContent  = `${checked.length} selected`;
+    selCountEl.style.display = "";
+    deleteSelBtn.style.display = "";
+  } else {
+    selCountEl.style.display  = "none";
+    deleteSelBtn.style.display = "none";
+  }
+  if (selectAll) {
+    selectAll.indeterminate = checked.length > 0 && checked.length < total.length;
+    selectAll.checked = checked.length > 0 && checked.length === total.length;
+  }
+}
+
+async function deleteSelected() {
+  const checked = [...document.querySelectorAll(".txn-cb:checked")];
+  if (!checked.length) return;
+  if (!confirm(`Delete ${checked.length} transaction${checked.length>1?'s':''}? This cannot be undone.`)) return;
+  const ids = checked.map(el => el.value);
+  await fetch("/api/delete-many", {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({ids})
   });
   loadChart();
   loadTransactions(currentPage);
