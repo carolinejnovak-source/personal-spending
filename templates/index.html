@@ -136,7 +136,7 @@
           <tr>
             <th style="width:36px"><input type="checkbox" id="selectAll" onchange="toggleSelectAll(this)" title="Select all"/></th>
             <th>Date</th><th>Posted</th><th>Description</th><th class="text-end">Amount</th>
-            <th>Category</th><th>Subcategory</th><th></th>
+            <th>Category</th><th>Subcategory</th><th>Notes</th><th></th>
           </tr>
         </thead>
         <tbody id="txnBody"></tbody>
@@ -144,6 +144,30 @@
     </div>
     <div id="txnPager" class="d-flex justify-content-between align-items-center mt-3" style="font-size:.82rem;display:none!important"></div>
     <div id="txnEmpty" class="text-center py-4 text-muted" style="display:none">No transactions to show.</div>
+  </div>
+
+  <!-- Credits section -->
+  <div class="card p-3 mt-4" id="creditsCard" style="display:none">
+    <h6 class="fw-bold mb-1" style="color:#dc2626">Credits &amp; Returns</h6>
+    <p class="text-muted small mb-3">These returns had no matching purchase in the current or previous month and are excluded from your totals.</p>
+    <div class="table-responsive">
+      <table class="table txn-table mb-0">
+        <thead>
+          <tr><th>Date</th><th>Description</th><th class="text-end">Amount</th><th>Category</th><th></th></tr>
+        </thead>
+        <tbody id="creditsBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Right-click context menu -->
+<div id="ctxMenu" style="display:none;position:fixed;z-index:9999;background:#fff;border:1px solid #e5e7eb;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.15);padding:8px 0;min-width:180px">
+  <div style="padding:6px 14px;font-size:.78rem;color:#6b7280;border-bottom:1px solid #f3f4f6;margin-bottom:4px">Edit amount</div>
+  <div style="padding:6px 12px;display:flex;align-items:center;gap:6px">
+    <span style="color:#6b7280;font-size:.9rem">$</span>
+    <input id="ctxAmtInput" type="number" step="0.01" min="0" style="border:1px solid #d1d5db;border-radius:6px;padding:4px 8px;font-size:.88rem;width:110px" />
+    <button onclick="saveCtxAmount()" class="btn btn-sm btn-purple" style="padding:4px 10px;font-size:.78rem">Save</button>
   </div>
 </div>
 
@@ -364,6 +388,7 @@ async function loadTransactions(page) {
   const data = await res.json();
   totalTxns  = data.total;
   renderTransactions(data.transactions);
+  renderCredits(data.credits || []);
   renderPager(data.total, data.page, data.per_page);
 }
 
@@ -385,12 +410,22 @@ function renderTransactions(txns) {
     const hasSubs     = (cat.subcategories||[]).length > 0;
     const subOptions  = hasSubs ? (cat.subcategories||[]).map(s=>`<option value="${escHtml(s)}" ${s===t.subcategory?'selected':''}>${escHtml(s)}</option>`).join("") : "";
 
+    const noteStyle = t.notes ? "color:#dc2626;font-weight:600" : "color:#9ca3af";
+    const amtStyle  = t.notes === "return" ? "text-decoration:line-through;color:#9ca3af" :
+                      t.notes === "partial return" ? "color:#f97316" : "";
+
     html += `<tr id="txn-${t.id}">
       <td><input type="checkbox" class="txn-cb" value="${t.id}" onchange="updateSelCount()"/></td>
       <td style="white-space:nowrap">${t.date}</td>
       <td style="white-space:nowrap;color:#9ca3af;font-size:.78rem">${t.post_date||'—'}</td>
       <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escHtml(t.description)}">${escHtml(t.description)}</td>
-      <td class="text-end fw-semibold">${fmtMoney(t.amount)}</td>
+      <td class="text-end fw-semibold" style="${amtStyle}">
+        <span class="amt-cell" data-id="${t.id}" data-amt="${t.amount}"
+              oncontextmenu="openCtxMenu(event,'${t.id}',${t.amount})" title="Right-click to edit">
+          ${fmtMoney(t.amount)}
+        </span>
+        ${t.original_amount && t.original_amount !== t.amount ? `<div style="font-size:.7rem;color:#9ca3af;text-decoration:line-through">${fmtMoney(t.original_amount)}</div>` : ''}
+      </td>
       <td>
         <select class="cat-select" onchange="recategorize('${t.id}', this.value, null)">
           ${catOptions}
@@ -400,6 +435,12 @@ function renderTransactions(txns) {
         ${hasSubs ? `<select class="sub-select" id="sub-${t.id}" onchange="updateSubcat('${t.id}', this.value)">
           <option value="">— none —</option>${subOptions}
         </select>` : `<span class="text-muted" style="font-size:.78rem">—</span>`}
+      </td>
+      <td>
+        <input type="text" class="note-input" value="${escHtml(t.notes||'')}"
+               placeholder="add note…" style="${noteStyle};border:none;background:transparent;font-size:.78rem;min-width:90px;max-width:130px"
+               onblur="saveNote('${t.id}', this.value)"
+               onkeydown="if(event.key==='Enter')this.blur()"/>
       </td>
       <td>
         <button class="btn btn-sm btn-link text-danger p-0" onclick="deleteTransaction('${t.id}')" title="Delete">
@@ -458,6 +499,64 @@ async function updateSubcat(id, newSub) {
   });
   loadChart();
 }
+
+function renderCredits(credits) {
+  const card = document.getElementById("creditsCard");
+  const body = document.getElementById("creditsBody");
+  if (!credits.length) { card.style.display = "none"; return; }
+  card.style.display = "";
+  body.innerHTML = credits.map(c => `
+    <tr id="txn-${c.id}">
+      <td style="white-space:nowrap">${c.date}</td>
+      <td>${escHtml(c.description)}</td>
+      <td class="text-end fw-semibold" style="color:#16a34a">+${fmtMoney(c.amount)}</td>
+      <td><span class="badge-sub">${escHtml(c.category||'')}</span></td>
+      <td><button class="btn btn-sm btn-link text-danger p-0" onclick="deleteTransaction('${c.id}')"><i class="fa fa-trash-alt"></i></button></td>
+    </tr>`).join("");
+}
+
+async function saveNote(id, note) {
+  await fetch("/api/edit-transaction", {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({id, notes: note})
+  });
+  // Refresh chart silently
+  loadChart();
+}
+
+// ── Right-click amount editor ─────────────────────────────────────────────
+let _ctxId = null;
+const ctxMenu = document.getElementById("ctxMenu");
+
+function openCtxMenu(e, id, currentAmt) {
+  e.preventDefault();
+  _ctxId = id;
+  document.getElementById("ctxAmtInput").value = currentAmt;
+  ctxMenu.style.display = "block";
+  ctxMenu.style.left = Math.min(e.clientX, window.innerWidth - 220) + "px";
+  ctxMenu.style.top  = Math.min(e.clientY, window.innerHeight - 100) + "px";
+  setTimeout(() => document.getElementById("ctxAmtInput").focus(), 50);
+}
+
+async function saveCtxAmount() {
+  const amt = document.getElementById("ctxAmtInput").value;
+  if (!_ctxId || amt === "") return;
+  await fetch("/api/edit-transaction", {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({id: _ctxId, amount: parseFloat(amt)})
+  });
+  ctxMenu.style.display = "none";
+  loadChart();
+  loadTransactions(currentPage);
+}
+
+document.addEventListener("click", e => {
+  if (!ctxMenu.contains(e.target)) ctxMenu.style.display = "none";
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") ctxMenu.style.display = "none";
+  if (e.key === "Enter" && ctxMenu.style.display !== "none") saveCtxAmount();
+});
 
 async function deleteTransaction(id) {
   if (!confirm("Delete this transaction?")) return;

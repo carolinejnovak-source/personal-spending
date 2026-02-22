@@ -1,20 +1,20 @@
 CATEGORIES = {
     "Automotive":                       {"color": "#64748b", "subcategories": []},
     "Bills & Utilities":                {"color": "#0ea5e9", "subcategories": []},
-    "Education":                        {"color": "#8b5cf6", "subcategories": []},
-    "Entertainment":                    {"color": "#f43f5e", "subcategories": []},
+    "Education":                        {"color": "#8b5cf6", "subcategories": ["Museums"]},
+    "Entertainment":                    {"color": "#f43f5e", "subcategories": ["Kids Entertainment", "Parent Entertainment"]},
     "Fees & Adjustments":               {"color": "#94a3b8", "subcategories": []},
     "Food & Drink":                     {"color": "#f97316", "subcategories": []},
     "Gas":                              {"color": "#eab308", "subcategories": []},
     "Gifts & Donations":                {"color": "#ec4899", "subcategories": ["Gifts for Friends", "Gifts for Family", "Charitable Donations"]},
     "Groceries":                        {"color": "#22c55e", "subcategories": []},
-    "Health & Wellness":                {"color": "#ef4444", "subcategories": []},
+    "Health & Wellness":                {"color": "#ef4444", "subcategories": ["Pharmacy", "Deductible", "Fitness"]},
     "Home":                             {"color": "#06b6d4", "subcategories": []},
     "Kids - Extracurriculars":          {"color": "#a855f7", "subcategories": []},
     "Kids - Educational Materials & Art": {"color": "#84cc16", "subcategories": []},
     "Kids - Gifts":                     {"color": "#f472b6", "subcategories": []},
     "Miscellaneous":                    {"color": "#d1d5db", "subcategories": []},
-    "Personal":                         {"color": "#6366f1", "subcategories": []},
+    "Personal":                         {"color": "#6366f1", "subcategories": ["Beauty"]},
     "Professional Services":            {"color": "#14b8a6", "subcategories": []},
     "Shopping":                         {"color": "#7c3aed", "subcategories": ["Kids Clothing", "Mom Clothing", "Home"]},
     "Travel":                           {"color": "#1d4ed8", "subcategories": ["Flights", "Hotels", "Dining"]},
@@ -27,6 +27,14 @@ SUBCATEGORY_COLORS = {
     "Gifts for Friends": "#f9a8d4", "Gifts for Family": "#f472b6", "Charitable Donations": "#db2777",
     # Travel
     "Flights": "#93c5fd", "Hotels": "#60a5fa", "Dining": "#3b82f6",
+    # Health & Wellness
+    "Pharmacy": "#fca5a5", "Deductible": "#f87171", "Fitness": "#fb923c",
+    # Entertainment
+    "Kids Entertainment": "#fb7185", "Parent Entertainment": "#f43f5e",
+    # Education
+    "Museums": "#a78bfa",
+    # Personal
+    "Beauty": "#818cf8",
 }
 
 CHASE_CATEGORY_MAP = {
