@@ -1,11 +1,10 @@
 CATEGORIES = {
     "Automotive":                       {"color": "#64748b", "subcategories": ["Gas", "Parking", "Ubers & Lyfts"]},
     "Bills & Utilities":                {"color": "#0ea5e9", "subcategories": []},
-    "Education":                        {"color": "#8b5cf6", "subcategories": ["Museums"]},
-    "Entertainment":                    {"color": "#f43f5e", "subcategories": ["Kids Entertainment", "Parent Entertainment"]},
+    "Education":                        {"color": "#8b5cf6", "subcategories": []},
+    "Entertainment":                    {"color": "#f43f5e", "subcategories": ["Kids Entertainment", "Parent Entertainment", "Museums"]},
     "Fees & Adjustments":               {"color": "#94a3b8", "subcategories": []},
     "Food & Drink":                     {"color": "#f97316", "subcategories": []},
-    "Gas":                              {"color": "#eab308", "subcategories": []},
     "Gifts & Donations":                {"color": "#ec4899", "subcategories": ["Gifts for Friends", "Gifts for Family", "Charitable Donations"]},
     "Groceries":                        {"color": "#22c55e", "subcategories": []},
     "Health & Wellness":                {"color": "#ef4444", "subcategories": ["Pharmacy", "Deductible & Coinsurance", "Copays", "Fitness", "Kids Dental", "Adult Dental"]},
@@ -30,9 +29,7 @@ SUBCATEGORY_COLORS = {
     # Health & Wellness
     "Pharmacy": "#fca5a5", "Deductible & Coinsurance": "#f87171", "Copays": "#fda4af", "Fitness": "#fb923c", "Kids Dental": "#f9a8d4", "Adult Dental": "#f472b6",
     # Entertainment
-    "Kids Entertainment": "#fb7185", "Parent Entertainment": "#f43f5e",
-    # Education
-    "Museums": "#a78bfa",
+    "Kids Entertainment": "#fb7185", "Parent Entertainment": "#f43f5e", "Museums": "#fb923c",
     # Personal
     "Beauty": "#818cf8",
     # Kids
@@ -46,7 +43,7 @@ CHASE_CATEGORY_MAP = {
     "Entertainment": "Entertainment",
     "Fees & Adjustments": "Fees & Adjustments",
     "Food & Drink": "Food & Drink",
-    "Gas": "Gas",
+    "Gas": "Automotive",
     "Gifts & Donations": "Gifts & Donations",
     "Groceries": "Groceries",
     "Health & Wellness": "Health & Wellness",
