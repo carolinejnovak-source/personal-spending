@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Personal Spending</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  body { background:#f5f0ff; font-family:'Segoe UI',system-ui,sans-serif; }
+  .navbar { background:linear-gradient(135deg,#4a1a8f,#7c3aed); box-shadow:0 2px 12px rgba(124,58,237,.3); }
+  .card { border:none; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,.07); }
+  .filter-bar { background:#fff; border-radius:14px; padding:16px 20px; box-shadow:0 2px 12px rgba(0,0,0,.07); margin-bottom:20px; }
+  .filter-bar select { border-radius:8px; font-size:.88rem; cursor:pointer; }
+  .total-badge { font-size:1.5rem; font-weight:700; color:#4a1a8f; }
+  .cat-dot { width:12px; height:12px; border-radius:50%; display:inline-block; flex-shrink:0; }
+  .cat-row { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px solid #f3f0ff; cursor:pointer; transition:background .15s; border-radius:6px; }
+  .cat-row:hover { background:#f5f0ff; }
+  .cat-row.drillable:hover .cat-name::after { content:" ↓"; color:#7c3aed; font-size:.8rem; }
+  .cat-name { flex:1; font-size:.9rem; }
+  .cat-pct { font-size:.85rem; color:#6b7280; width:52px; text-align:right; }
+  .cat-amt { font-size:.9rem; font-weight:600; width:90px; text-align:right; }
+  #drill-back { cursor:pointer; color:#7c3aed; font-size:.85rem; margin-bottom:8px; display:none; }
+  #drill-back:hover { text-decoration:underline; }
+  #drill-title { font-weight:700; font-size:1rem; color:#4a1a8f; margin-bottom:4px; display:none; }
+  .txn-table { font-size:.83rem; }
+  .txn-table th { font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; color:#6b7280; font-weight:600; background:#f9f7ff; }
+  .txn-table td { vertical-align:middle; }
+  .cat-select { font-size:.8rem; border-radius:6px; padding:2px 6px; border:1px solid #e0d9ff; cursor:pointer; max-width:170px; }
+  .sub-select { font-size:.8rem; border-radius:6px; padding:2px 6px; border:1px solid #e0d9ff; cursor:pointer; max-width:140px; }
+  .btn-purple { background:linear-gradient(135deg,#4a1a8f,#7c3aed); color:#fff; border:none; }
+  .btn-purple:hover { background:linear-gradient(135deg,#5b21b6,#8b5cf6); color:#fff; }
+  .upload-zone { border:2px dashed #c4b5fd; border-radius:12px; padding:28px; text-align:center; cursor:pointer; transition:background .2s; }
+  .upload-zone:hover, .upload-zone.drag { background:#f0ebff; }
+  .spinner-wrap { display:none; }
+  .badge-sub { font-size:.72rem; background:#ede9fe; color:#5b21b6; border-radius:20px; padding:2px 8px; }
+  .savings-tip { font-size:.78rem; color:#6b7280; font-style:italic; }
+  @media(max-width:768px) { .chart-col { display:none; } }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark px-4 py-3 d-flex justify-content-between align-items-center">
+  <span class="navbar-brand fw-bold mb-0">🌙 Personal Spending</span>
+  <div class="d-flex align-items-center gap-3">
+    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#uploadModal">
+      <i class="fa fa-upload me-1"></i>Upload CSV
+    </button>
+    <a href="/logout" class="btn btn-sm btn-outline-light">Sign out</a>
+  </div>
+</nav>
+
+<div class="container-fluid px-4 py-4" style="max-width:1300px">
+
+  <!-- Filter bar -->
+  <div class="filter-bar d-flex flex-wrap align-items-center gap-3">
+    <div>
+      <label class="form-label mb-1" style="font-size:.78rem;font-weight:600;color:#6b7280">YEAR</label>
+      <select id="yearSel" class="form-select form-select-sm" style="min-width:100px" onchange="applyFilters()">
+        <option value="all">All years</option>
+      </select>
+    </div>
+    <div>
+      <label class="form-label mb-1" style="font-size:.78rem;font-weight:600;color:#6b7280">MONTH</label>
+      <select id="monthSel" class="form-select form-select-sm" style="min-width:130px" onchange="applyFilters()">
+        <option value="all">All months</option>
+        <option value="01">January</option><option value="02">February</option>
+        <option value="03">March</option><option value="04">April</option>
+        <option value="05">May</option><option value="06">June</option>
+        <option value="07">July</option><option value="08">August</option>
+        <option value="09">September</option><option value="10">October</option>
+        <option value="11">November</option><option value="12">December</option>
+      </select>
+    </div>
+    <div class="ms-auto d-flex align-items-center gap-3">
+      <div class="text-end">
+        <div style="font-size:.75rem;color:#6b7280;font-weight:600">TOTAL SPENDING</div>
+        <div class="total-badge" id="totalAmt">—</div>
+      </div>
+      <div class="text-end">
+        <div style="font-size:.75rem;color:#6b7280;font-weight:600">TRANSACTIONS</div>
+        <div class="total-badge" id="totalCount" style="font-size:1.2rem">—</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main row: chart + legend -->
+  <div class="row g-4 mb-4">
+    <!-- Donut chart -->
+    <div class="col-md-5 chart-col">
+      <div class="card p-3 h-100 d-flex flex-column justify-content-center">
+        <div id="drill-back" onclick="backToMain()">← Back to all categories</div>
+        <div id="drill-title"></div>
+        <div style="position:relative;max-height:380px">
+          <canvas id="spendingChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category legend -->
+    <div class="col-md-7">
+      <div class="card p-3 h-100">
+        <div id="drill-back-mobile" class="d-md-none mb-2" onclick="backToMain()" style="display:none;cursor:pointer;color:#7c3aed;font-size:.85rem">← Back to all categories</div>
+        <div id="catList"></div>
+        <div id="emptyState" class="text-center py-5 text-muted" style="display:none">
+          <i class="fa fa-chart-pie fa-3x mb-3 opacity-25"></i>
+          <div>No spending data yet.</div>
+          <div class="mt-2"><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload your first CSV →</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transactions -->
+  <div class="card p-3">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h6 class="fw-bold mb-0">Transactions</h6>
+      <select id="catFilter" class="form-select form-select-sm" style="max-width:200px" onchange="loadTransactions()">
+        <option value="all">All categories</option>
+        {% for cat in category_names %}
+        <option value="{{ cat }}">{{ cat }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="table-responsive">
+      <table class="table txn-table mb-0">
+        <thead>
+          <tr>
+            <th>Date</th><th>Description</th><th class="text-end">Amount</th>
+            <th>Category</th><th>Subcategory</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="txnBody"></tbody>
+      </table>
+    </div>
+    <div id="txnPager" class="d-flex justify-content-between align-items-center mt-3" style="font-size:.82rem;display:none!important"></div>
+    <div id="txnEmpty" class="text-center py-4 text-muted" style="display:none">No transactions to show.</div>
+  </div>
+</div>
+
+<!-- Upload Modal -->
+<div class="modal fade" id="uploadModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Upload Chase CSV</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="upload-zone" id="uploadZone" onclick="document.getElementById('csvFile').click()">
+          <i class="fa fa-file-csv fa-2x mb-2" style="color:#7c3aed"></i>
+          <div class="fw-semibold mb-1">Click to select your Chase CSV</div>
+          <div class="text-muted small">Or drag & drop here</div>
+          <input type="file" id="csvFile" accept=".csv" style="display:none" onchange="handleFile(this)"/>
+        </div>
+        <div id="uploadStatus" class="mt-3"></div>
+        <div class="spinner-wrap text-center mt-3" id="uploadSpinner">
+          <div class="spinner-border text-purple" role="status" style="color:#7c3aed"></div>
+          <div class="mt-2 small text-muted">Uploading and categorizing…</div>
+        </div>
+        <div class="mt-3 text-muted small">
+          <strong>How to export from Chase:</strong><br>
+          Accounts → Activity → Download → CSV format. Duplicate transactions are automatically skipped.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const CATEGORIES = {{ categories | tojson }};
+const CATEGORY_NAMES = {{ category_names | tojson }};
+let chart = null;
+let chartData = null;
+let drillCat = null;
+let currentPage = 1;
+let totalTxns = 0;
+const PER_PAGE = 50;
+
+const MONTH_NAMES = {
+  "01":"Jan","02":"Feb","03":"Mar","04":"Apr","05":"May","06":"Jun",
+  "07":"Jul","08":"Aug","09":"Sep","10":"Oct","11":"Nov","12":"Dec"
+};
+
+function getFilters() {
+  return {
+    year:  document.getElementById("yearSel").value,
+    month: document.getElementById("monthSel").value,
+  };
+}
+
+async function applyFilters() {
+  currentPage = 1;
+  drillCat = null;
+  await loadChart();
+  await loadTransactions();
+}
+
+async function loadChart() {
+  const {year, month} = getFilters();
+  const res  = await fetch(`/api/chart-data?year=${year}&month=${month}`);
+  const data = await res.json();
+  chartData  = data;
+
+  // Populate year selector
+  const ySel = document.getElementById("yearSel");
+  const curY = ySel.value;
+  ySel.innerHTML = '<option value="all">All years</option>';
+  for (const y of (data.years_available || [])) {
+    ySel.innerHTML += `<option value="${y}" ${y===curY?'selected':''}>${y}</option>`;
+  }
+
+  document.getElementById("totalAmt").textContent  = fmtMoney(data.total);
+  document.getElementById("totalCount").textContent = data.count;
+
+  if (!data.total) {
+    document.getElementById("emptyState").style.display = "";
+    document.getElementById("catList").innerHTML = "";
+    if (chart) { chart.destroy(); chart = null; }
+    return;
+  }
+  document.getElementById("emptyState").style.display = "none";
+  renderChart(data.categories, data.category_colors);
+  renderLegend(data.categories, data.subcategories, data.total, data.category_colors, data.drillable);
+}
+
+function renderChart(catTotals, colors) {
+  const cats   = Object.keys(catTotals).filter(c => catTotals[c] > 0);
+  const vals   = cats.map(c => catTotals[c]);
+  const bgColors = cats.map(c => colors[c] || "#ccc");
+
+  if (chart) chart.destroy();
+  const ctx = document.getElementById("spendingChart").getContext("2d");
+  chart = new Chart(ctx, {
+    type: "doughnut",
+    data: { labels: cats, datasets: [{ data: vals, backgroundColor: bgColors, borderWidth: 2, borderColor: "#fff", hoverOffset: 8 }] },
+    options: {
+      cutout: "62%",
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const total = ctx.dataset.data.reduce((a,b)=>a+b,0);
+              const pct   = ((ctx.raw/total)*100).toFixed(1);
+              return ` ${fmtMoney(ctx.raw)} (${pct}%)`;
+            }
+          }
+        }
+      },
+      onClick: (evt, elements) => {
+        if (!elements.length) return;
+        const cat = chart.data.labels[elements[0].index];
+        if (chartData.drillable.includes(cat)) drillDown(cat);
+      }
+    }
+  });
+}
+
+function renderLegend(catTotals, subTotals, total, colors, drillable) {
+  const cats    = Object.keys(catTotals).filter(c => catTotals[c] > 0)
+    .sort((a,b) => catTotals[b]-catTotals[a]);
+  let html = '<div style="font-size:.78rem;font-weight:600;color:#6b7280;display:flex;padding:0 4px 6px;gap:10px">'
+    + '<span style="flex:1">CATEGORY</span><span style="width:52px;text-align:right">%</span>'
+    + '<span style="width:90px;text-align:right">AMOUNT</span></div>';
+
+  for (const cat of cats) {
+    const pct  = ((catTotals[cat]/total)*100).toFixed(1);
+    const isDrill = drillable.includes(cat);
+    html += `<div class="cat-row ${isDrill?'drillable':''}" onclick="${isDrill?`drillDown('${cat.replace(/'/g,"\\'")}')`:''}" title="${isDrill?'Click to see breakdown':''}">
+      <span class="cat-dot" style="background:${colors[cat]||'#ccc'}"></span>
+      <span class="cat-name">${cat}</span>
+      ${isDrill ? '<i class="fa fa-chevron-down" style="font-size:.65rem;color:#a78bfa"></i>' : ''}
+      <span class="cat-pct">${pct}%</span>
+      <span class="cat-amt">${fmtMoney(catTotals[cat])}</span>
+    </div>`;
+  }
+  document.getElementById("catList").innerHTML = html;
+  document.getElementById("drill-back").style.display = "none";
+  document.getElementById("drill-title").style.display = "none";
+}
+
+function drillDown(cat) {
+  drillCat = cat;
+  const subs   = chartData.subcategories[cat] || {};
+  const subColors = chartData.subcategory_colors;
+  const total  = Object.values(subs).reduce((a,b)=>a+b,0) || 0;
+
+  // Update chart
+  if (chart) chart.destroy();
+  const ctx = document.getElementById("spendingChart").getContext("2d");
+  const labels = Object.keys(subs).filter(s=>subs[s]>0);
+  const vals   = labels.map(s=>subs[s]);
+  const colors = labels.map(s=>subColors[s]||"#ccc");
+
+  chart = new Chart(ctx, {
+    type: "doughnut",
+    data: { labels, datasets:[{data:vals, backgroundColor:colors, borderWidth:2, borderColor:"#fff", hoverOffset:8}] },
+    options: {
+      cutout:"62%",
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:ctx=>{
+          const t=ctx.dataset.data.reduce((a,b)=>a+b,0);
+          return ` ${fmtMoney(ctx.raw)} (${((ctx.raw/t)*100).toFixed(1)}%)`;
+        }}}
+      },
+      onClick:()=>{}
+    }
+  });
+
+  document.getElementById("drill-back").style.display = "";
+  document.getElementById("drill-title").style.display = "";
+  document.getElementById("drill-title").textContent   = cat;
+
+  // Legend for subcategories
+  const allSubs = CATEGORIES[cat].subcategories;
+  let html = `<div style="font-size:.78rem;font-weight:600;color:#6b7280;display:flex;padding:0 4px 6px;gap:10px">
+    <span style="flex:1">SUBCATEGORY</span><span style="width:52px;text-align:right">%</span>
+    <span style="width:90px;text-align:right">AMOUNT</span></div>`;
+
+  for (const sub of allSubs) {
+    const amt = subs[sub] || 0;
+    const pct = total > 0 ? ((amt/total)*100).toFixed(1) : "0.0";
+    html += `<div class="cat-row">
+      <span class="cat-dot" style="background:${subColors[sub]||'#ccc'}"></span>
+      <span class="cat-name">${sub}</span>
+      <span class="cat-pct">${pct}%</span>
+      <span class="cat-amt">${fmtMoney(amt)}</span>
+    </div>`;
+  }
+
+  if (!total) html += `<div class="text-muted small py-3 text-center">No subcategorized transactions yet — recategorize some below!</div>`;
+  document.getElementById("catList").innerHTML = html;
+
+  // Filter transactions to this category
+  document.getElementById("catFilter").value = cat;
+  loadTransactions();
+}
+
+function backToMain() {
+  drillCat = null;
+  renderChart(chartData.categories, chartData.category_colors);
+  renderLegend(chartData.categories, chartData.subcategories, chartData.total, chartData.category_colors, chartData.drillable);
+  document.getElementById("catFilter").value = "all";
+  loadTransactions();
+}
+
+async function loadTransactions(page) {
+  currentPage = page || 1;
+  const {year, month} = getFilters();
+  const cat = document.getElementById("catFilter").value;
+  const res  = await fetch(`/api/transactions?year=${year}&month=${month}&category=${encodeURIComponent(cat)}&page=${currentPage}&per_page=${PER_PAGE}`);
+  const data = await res.json();
+  totalTxns  = data.total;
+  renderTransactions(data.transactions);
+  renderPager(data.total, data.page, data.per_page);
+}
+
+function renderTransactions(txns) {
+  const tbody = document.getElementById("txnBody");
+  const empty = document.getElementById("txnEmpty");
+
+  if (!txns.length) {
+    tbody.innerHTML = "";
+    empty.style.display = "";
+    return;
+  }
+  empty.style.display = "none";
+
+  let html = "";
+  for (const t of txns) {
+    const catOptions  = CATEGORY_NAMES.map(c => `<option value="${escHtml(c)}" ${c===t.category?'selected':''}>${escHtml(c)}</option>`).join("");
+    const cat         = CATEGORIES[t.category] || {};
+    const hasSubs     = (cat.subcategories||[]).length > 0;
+    const subOptions  = hasSubs ? (cat.subcategories||[]).map(s=>`<option value="${escHtml(s)}" ${s===t.subcategory?'selected':''}>${escHtml(s)}</option>`).join("") : "";
+
+    html += `<tr id="txn-${t.id}">
+      <td style="white-space:nowrap">${t.date}</td>
+      <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escHtml(t.description)}">${escHtml(t.description)}</td>
+      <td class="text-end fw-semibold">${fmtMoney(t.amount)}</td>
+      <td>
+        <select class="cat-select" onchange="recategorize('${t.id}', this.value, null)">
+          ${catOptions}
+        </select>
+      </td>
+      <td>
+        ${hasSubs ? `<select class="sub-select" id="sub-${t.id}" onchange="updateSubcat('${t.id}', this.value)">
+          <option value="">— none —</option>${subOptions}
+        </select>` : `<span class="text-muted" style="font-size:.78rem">—</span>`}
+      </td>
+      <td>
+        <button class="btn btn-sm btn-link text-danger p-0" onclick="deleteTransaction('${t.id}')" title="Delete">
+          <i class="fa fa-trash-alt"></i>
+        </button>
+      </td>
+    </tr>`;
+  }
+  tbody.innerHTML = html;
+}
+
+function renderPager(total, page, perPage) {
+  const pager = document.getElementById("txnPager");
+  if (total <= perPage) { pager.style.display = "none"; return; }
+  pager.style.display = "flex";
+  const pages = Math.ceil(total/perPage);
+  pager.innerHTML = `
+    <span class="text-muted">Showing ${((page-1)*perPage)+1}–${Math.min(page*perPage,total)} of ${total}</span>
+    <div class="d-flex gap-2">
+      <button class="btn btn-sm btn-outline-secondary" ${page===1?'disabled':''} onclick="loadTransactions(${page-1})">← Prev</button>
+      <button class="btn btn-sm btn-outline-secondary" ${page===pages?'disabled':''} onclick="loadTransactions(${page+1})">Next →</button>
+    </div>`;
+}
+
+async function recategorize(id, newCat, newSub) {
+  // Reset subcategory when category changes
+  const cat = CATEGORIES[newCat] || {};
+  const subEl = document.getElementById(`sub-${id}`);
+
+  // Rebuild subcategory dropdown if needed
+  if (subEl) {
+    const subs = cat.subcategories || [];
+    if (subs.length) {
+      subEl.innerHTML = `<option value="">— none —</option>` + subs.map(s=>`<option value="${escHtml(s)}">${escHtml(s)}</option>`).join("");
+    }
+    newSub = null;
+  }
+
+  await fetch("/api/recategorize", {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({id, category:newCat, subcategory:newSub})
+  });
+  // Refresh chart silently
+  loadChart();
+}
+
+async function updateSubcat(id, newSub) {
+  const row = document.getElementById(`txn-${id}`);
+  const catSel = row ? row.querySelector(".cat-select") : null;
+  const cat = catSel ? catSel.value : null;
+  if (!cat) return;
+  await fetch("/api/recategorize", {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({id, category:cat, subcategory:newSub||null})
+  });
+  loadChart();
+}
+
+async function deleteTransaction(id) {
+  if (!confirm("Delete this transaction?")) return;
+  await fetch("/api/delete-transaction", {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({id})
+  });
+  loadChart();
+  loadTransactions(currentPage);
+}
+
+// ── CSV Upload ─────────────────────────────────────────────────────────────
+
+function handleFile(input) {
+  const file = input.files[0];
+  if (!file) return;
+  uploadFile(file);
+}
+
+const uploadZone = document.getElementById("uploadZone");
+uploadZone.addEventListener("dragover", e => { e.preventDefault(); uploadZone.classList.add("drag"); });
+uploadZone.addEventListener("dragleave", () => uploadZone.classList.remove("drag"));
+uploadZone.addEventListener("drop", e => {
+  e.preventDefault(); uploadZone.classList.remove("drag");
+  const file = e.dataTransfer.files[0];
+  if (file) uploadFile(file);
+});
+
+async function uploadFile(file) {
+  const spinner = document.getElementById("uploadSpinner");
+  const status  = document.getElementById("uploadStatus");
+  spinner.style.display = "block";
+  status.innerHTML = "";
+
+  const fd = new FormData();
+  fd.append("file", file);
+  const res  = await fetch("/api/upload-csv", {method:"POST", body:fd});
+  const data = await res.json();
+  spinner.style.display = "none";
+
+  if (data.success) {
+    status.innerHTML = `<div class="alert alert-success py-2">✅ Added <strong>${data.added}</strong> new transactions (${data.total} total). <a href="#" onclick="bootstrap.Modal.getInstance(document.getElementById('uploadModal')).hide();applyFilters();return false">View dashboard →</a></div>`;
+    applyFilters();
+  } else {
+    status.innerHTML = `<div class="alert alert-danger py-2">❌ ${data.error || "Upload failed."}</div>`;
+  }
+}
+
+// ── Utilities ──────────────────────────────────────────────────────────────
+
+function fmtMoney(n) {
+  if (!n && n!==0) return "—";
+  return "$" + Number(n).toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+function escHtml(s) {
+  if (!s) return "";
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+applyFilters();
+</script>
+</body>
+</html>

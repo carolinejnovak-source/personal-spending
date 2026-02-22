@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In — Personal Spending</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body { background: linear-gradient(135deg, #4a1a8f 0%, #8b1a56 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Segoe UI', system-ui, sans-serif; }
+    .login-card { background: #fff; border-radius: 16px; padding: 40px 36px; width: 100%; max-width: 400px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); }
+    .brand { font-size: 1.1rem; font-weight: 700; color: #7c3aed; margin-bottom: 6px; }
+    .brand-sub { font-size: .8rem; color: #9ca3af; margin-bottom: 28px; }
+    .form-label { font-size: .82rem; font-weight: 600; color: #374151; }
+    .form-control { border-radius: 8px; font-size: .9rem; }
+    .form-control:focus { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124,58,237,.15); }
+    .btn-signin { background: linear-gradient(135deg, #4a1a8f, #7c3aed); border: none; border-radius: 8px; font-weight: 600; padding: 10px; }
+    .btn-signin:hover { background: linear-gradient(135deg, #5b21b6, #8b5cf6); }
+    .moon { color: #7c3aed; }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <div class="text-center mb-4">
+      <div class="brand"><span class="moon">🌙</span> Personal Spending</div>
+      <div class="brand-sub">Monthly Spending Dashboard</div>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for cat, msg in messages %}
+        <div class="alert alert-{{ cat }} py-2 small">{{ msg }}</div>
+      {% endfor %}
+    {% endwith %}
+
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus/>
+      </div>
+      <div class="mb-4">
+        <label class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required/>
+      </div>
+      <button type="submit" class="btn btn-signin btn-primary w-100">Sign In</button>
+    </form>
+  </div>
+</body>
+</html>
