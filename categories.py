@@ -10,9 +10,7 @@ CATEGORIES = {
     "Groceries":                        {"color": "#22c55e", "subcategories": []},
     "Health & Wellness":                {"color": "#ef4444", "subcategories": ["Pharmacy", "Deductible", "Fitness"]},
     "Home":                             {"color": "#06b6d4", "subcategories": []},
-    "Kids - Extracurriculars":          {"color": "#a855f7", "subcategories": []},
-    "Kids - Educational Materials & Art": {"color": "#84cc16", "subcategories": []},
-    "Kids - Gifts":                     {"color": "#f472b6", "subcategories": []},
+    "Kids":                             {"color": "#a855f7", "subcategories": ["Extracurriculars", "Educational Materials & Art", "Gifts"]},
     "Miscellaneous":                    {"color": "#d1d5db", "subcategories": []},
     "Personal":                         {"color": "#6366f1", "subcategories": ["Beauty"]},
     "Professional Services":            {"color": "#14b8a6", "subcategories": []},
@@ -37,6 +35,8 @@ SUBCATEGORY_COLORS = {
     "Museums": "#a78bfa",
     # Personal
     "Beauty": "#818cf8",
+    # Kids
+    "Extracurriculars": "#c084fc", "Educational Materials & Art": "#a855f7", "Gifts": "#f472b6",
 }
 
 CHASE_CATEGORY_MAP = {
