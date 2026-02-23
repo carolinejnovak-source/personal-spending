@@ -8,6 +8,7 @@ from flask import session, redirect, url_for, request
 USERS = {
     "carolinejnovak": "crap",
     "david":          "ilovecaroline",
+    "teresa":         "googlegoddess",
 }
 
 # Keep these for compatibility with shared login route
