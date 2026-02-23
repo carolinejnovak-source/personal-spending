@@ -1747,8 +1747,8 @@
       "description": "WADSWORTH CITGO",
       "amount": 5.15,
       "original_amount": 5.15,
-      "category": "Automotive",
-      "subcategory": "Gas",
+      "category": "Entertainment",
+      "subcategory": null,
       "original_category": "Gas",
       "notes": null
     },
