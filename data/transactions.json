@@ -2120,7 +2120,7 @@
       "amount": 8.0,
       "original_amount": 8.0,
       "category": "Travel",
-      "subcategory": null,
+      "subcategory": "Flights",
       "original_category": "Travel",
       "notes": null
     },
