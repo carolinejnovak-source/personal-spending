@@ -1795,8 +1795,8 @@
       "description": "Sky Zone Lincoln Park",
       "amount": 11.0,
       "original_amount": 11.0,
-      "category": "Entertainment",
-      "subcategory": "Kids Entertainment",
+      "category": "Kids",
+      "subcategory": null,
       "original_category": "Entertainment",
       "notes": null
     },
