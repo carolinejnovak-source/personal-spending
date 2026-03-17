@@ -3212,7 +3212,7 @@
       "amount": 40.0,
       "original_amount": 40.0,
       "category": "Health & Wellness",
-      "subcategory": null,
+      "subcategory": "Copays",
       "original_category": "Health & Wellness",
       "notes": null
     },
