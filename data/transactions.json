@@ -3943,7 +3943,7 @@
       "description": "LYFT   *CANCEL FEE",
       "amount": 5.0,
       "original_amount": 5.0,
-      "category": "Travel",
+      "category": "Automotive",
       "subcategory": null,
       "original_category": "Travel",
       "notes": null
