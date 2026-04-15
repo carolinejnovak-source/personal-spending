@@ -688,7 +688,11 @@ function escHtml(s) {
 }
 
 // ── Init ───────────────────────────────────────────────────────────────────
-applyFilters();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', applyFilters);
+} else {
+  applyFilters();
+}
 </script>
 </body>
 </html>
