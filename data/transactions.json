@@ -6236,7 +6236,7 @@
       "amount": 150.0,
       "original_amount": 150.0,
       "category": "Automotive",
-      "subcategory": null,
+      "subcategory": "Parking",
       "original_category": "Bills & Utilities",
       "notes": null
     },
