@@ -1,5 +1,4 @@
 CATEGORIES = {
-    "Automotive":                       {"color": "#64748b", "subcategories": ["Gas", "Parking", "Ubers & Lyfts"]},
     "Bills & Utilities":                {"color": "#0ea5e9", "subcategories": []},
     "Entertainment":                    {"color": "#f43f5e", "subcategories": ["Kids Entertainment", "Parent Entertainment", "Museums"]},
     "Fees & Adjustments":               {"color": "#94a3b8", "subcategories": []},
@@ -10,21 +9,24 @@ CATEGORIES = {
     "Home":                             {"color": "#06b6d4", "subcategories": []},
     "Kids":                             {"color": "#a855f7", "subcategories": ["Extracurriculars", "Educational Materials & Art", "School Fees", "Camps", "Gifts"]},
     "Miscellaneous":                    {"color": "#d1d5db", "subcategories": []},
+    "Needs Categorization":             {"color": "#f59e0b", "subcategories": []},
     "Personal":                         {"color": "#6366f1", "subcategories": ["Beauty"]},
     "Professional Services":            {"color": "#14b8a6", "subcategories": []},
-    "Shopping":                         {"color": "#7c3aed", "subcategories": ["Kids Clothing", "Mom Clothing", "Dad Clothing", "Home"]},
+    "Shopping":                         {"color": "#7c3aed", "subcategories": ["Amazon MISC - Caroline", "Amazon MISC - Dave", "Kids Clothing", "Mom Clothing", "Dad Clothing", "Home"]},
+    "Transport":                        {"color": "#64748b", "subcategories": ["Bike Rental", "Gas", "Parking", "Ubers & Lyfts"]},
     "Travel":                           {"color": "#1d4ed8", "subcategories": ["Flights", "Hotels", "Dining"]},
 }
 
 SUBCATEGORY_COLORS = {
     # Shopping
+    "Amazon MISC - Caroline": "#9333ea", "Amazon MISC - Dave": "#7e22ce",
     "Kids Clothing": "#c084fc", "Mom Clothing": "#a78bfa", "Dad Clothing": "#6d28d9", "Home": "#818cf8",
     # Gifts & Donations
     "Gifts for Friends": "#f9a8d4", "Gifts for Family": "#f472b6", "Charitable Donations": "#db2777",
     # Travel
     "Flights": "#93c5fd", "Hotels": "#60a5fa", "Dining": "#3b82f6",
-    # Automotive
-    "Gas": "#94a3b8", "Parking": "#64748b", "Ubers & Lyfts": "#475569",
+    # Transport (formerly Automotive)
+    "Bike Rental": "#94a3b8", "Gas": "#94a3b8", "Parking": "#64748b", "Ubers & Lyfts": "#475569",
     # Health & Wellness
     "Pharmacy": "#fca5a5", "Deductible & Coinsurance": "#f87171", "Copays": "#fda4af", "Fitness": "#fb923c", "Kids Dental": "#f9a8d4", "Adult Dental": "#f472b6",
     # Entertainment
@@ -36,13 +38,13 @@ SUBCATEGORY_COLORS = {
 }
 
 CHASE_CATEGORY_MAP = {
-    "Automotive": "Automotive",
+    "Automotive": "Transport",
     "Bills & Utilities": "Bills & Utilities",
     "Education": "Kids",
     "Entertainment": "Entertainment",
     "Fees & Adjustments": "Fees & Adjustments",
     "Food & Drink": "Food & Drink",
-    "Gas": "Automotive",
+    "Gas": "Transport",
     "Gifts & Donations": "Gifts & Donations",
     "Groceries": "Groceries",
     "Health & Wellness": "Health & Wellness",
@@ -57,6 +59,8 @@ CHASE_CATEGORY_MAP = {
 def auto_detect_subcategory(category, description):
     d = description.lower()
     if category == "Shopping":
+        if "amazon" in d:
+            return None  # Let user assign Caroline vs Dave
         if any(k in d for k in ["carter", "children's place", "gap kids", "gymboree", "osh kosh", "zara kids", "hanna andersson", "mini boden", "janie and jack", "primary.com", "tea collection"]):
             return "Kids Clothing"
         if any(k in d for k in ["wayfair", "west elm", "pottery barn", "crate and barrel", "cb2", "restoration hardware", "article.com"]):
