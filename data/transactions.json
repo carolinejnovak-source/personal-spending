@@ -10543,7 +10543,7 @@
       "description": "UBER   *TRIP",
       "amount": 18.99,
       "original_amount": 18.99,
-      "category": "Travel",
+      "category": "Transport",
       "subcategory": null,
       "original_category": "Travel",
       "notes": null
