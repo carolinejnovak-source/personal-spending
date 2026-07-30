@@ -13879,7 +13879,7 @@
       "description": "ADVICEPAY.COM",
       "amount": 89.0,
       "original_amount": 89.0,
-      "category": "Personal",
+      "category": "Professional Services",
       "subcategory": null,
       "original_category": "Personal",
       "notes": null
@@ -13891,7 +13891,7 @@
       "description": "LYFT   *PRIORITY 05-13",
       "amount": 11.36,
       "original_amount": 11.36,
-      "category": "Travel",
+      "category": "Transport",
       "subcategory": null,
       "original_category": "Travel",
       "notes": null
