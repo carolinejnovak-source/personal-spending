@@ -12847,8 +12847,8 @@
       "description": "VENTRA ACCOUNT",
       "amount": 4.5,
       "original_amount": 4.5,
-      "category": "Travel",
-      "subcategory": "Hotels",
+      "category": "Transport",
+      "subcategory": null,
       "original_category": "Travel",
       "notes": null
     },
