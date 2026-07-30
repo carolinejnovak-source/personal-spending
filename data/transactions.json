@@ -14264,7 +14264,7 @@
       "amount": 100.0,
       "original_amount": 100.0,
       "category": "Transport",
-      "subcategory": null,
+      "subcategory": "Parking",
       "original_category": "Bills & Utilities",
       "notes": null
     },
