@@ -13111,8 +13111,8 @@
       "description": "LYFT   *PRIORITY 05-22",
       "amount": 16.99,
       "original_amount": 16.99,
-      "category": "Travel",
-      "subcategory": null,
+      "category": "Transport",
+      "subcategory": "Ubers & Lyfts",
       "original_category": "Travel",
       "notes": null
     },
