@@ -12956,7 +12956,7 @@
       "amount": 50.0,
       "original_amount": 50.0,
       "category": "Transport",
-      "subcategory": "Gas",
+      "subcategory": null,
       "original_category": "Travel",
       "notes": null
     },
