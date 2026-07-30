@@ -12644,7 +12644,7 @@
       "amount": 72.2,
       "original_amount": 72.2,
       "category": "Transport",
-      "subcategory": null,
+      "subcategory": "Gas",
       "original_category": "Transport",
       "notes": null
     },
