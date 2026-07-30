@@ -14731,7 +14731,7 @@
       "description": "UBER   *TRIP",
       "amount": 27.55,
       "original_amount": 27.55,
-      "category": "Travel",
+      "category": "Transport",
       "subcategory": null,
       "original_category": "Travel",
       "notes": null
