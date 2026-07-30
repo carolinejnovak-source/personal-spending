@@ -15415,7 +15415,7 @@
       "description": "LYFT   *CANC FEE 05-04",
       "amount": 3.75,
       "original_amount": 3.75,
-      "category": "Travel",
+      "category": "Transport",
       "subcategory": null,
       "original_category": "Travel",
       "notes": null
