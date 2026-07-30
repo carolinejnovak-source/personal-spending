@@ -14923,8 +14923,8 @@
       "description": "LYFT   *AIRPORT 05-07",
       "amount": 62.98,
       "original_amount": 62.98,
-      "category": "Travel",
-      "subcategory": "Flights",
+      "category": "Transport",
+      "subcategory": null,
       "original_category": "Travel",
       "notes": null
     },
