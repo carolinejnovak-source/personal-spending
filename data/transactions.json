@@ -14263,7 +14263,7 @@
       "description": "CHIPAY PARKING MAIN",
       "amount": 100.0,
       "original_amount": 100.0,
-      "category": "Bills & Utilities",
+      "category": "Transport",
       "subcategory": null,
       "original_category": "Bills & Utilities",
       "notes": null
