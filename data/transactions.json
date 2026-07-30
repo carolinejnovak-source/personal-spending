@@ -14600,7 +14600,7 @@
       "amount": 4.5,
       "original_amount": 4.5,
       "category": "Transport",
-      "subcategory": null,
+      "subcategory": "Bike Rental",
       "original_category": "Travel",
       "notes": null
     },
