@@ -13112,7 +13112,7 @@
       "amount": 16.99,
       "original_amount": 16.99,
       "category": "Transport",
-      "subcategory": "Ubers & Lyfts",
+      "subcategory": null,
       "original_category": "Travel",
       "notes": null
     },
