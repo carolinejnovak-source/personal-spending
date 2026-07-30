@@ -13399,8 +13399,8 @@
       "description": "PAPERLESS POST",
       "amount": 29.61,
       "original_amount": 29.61,
-      "category": "Shopping",
-      "subcategory": "Home",
+      "category": "Gifts & Donations",
+      "subcategory": null,
       "original_category": "Shopping",
       "notes": null
     },
