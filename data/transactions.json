@@ -15380,7 +15380,7 @@
       "amount": 70.52,
       "original_amount": 70.52,
       "category": "Transport",
-      "subcategory": null,
+      "subcategory": "Gas",
       "original_category": "Transport",
       "notes": null
     },
