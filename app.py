@@ -330,8 +330,8 @@ def _parse_chase_csv(content):
             chase_cat = row.get("Category", "Miscellaneous").strip()
             category  = CHASE_CATEGORY_MAP.get(chase_cat, "Miscellaneous")
 
-            date_raw = row.get("Transaction Date", row.get("Post Date", "")).strip()
-            post_raw = row.get("Post Date", "").strip()
+            date_raw = (row.get("Transaction Date") or row.get("Posting Date") or row.get("Post Date") or "").strip()
+            post_raw = (row.get("Post Date") or row.get("Posting Date") or "").strip()
             try:    date = datetime.strptime(date_raw, "%m/%d/%Y").strftime("%Y-%m-%d")
             except: date = date_raw
             try:    post_date = datetime.strptime(post_raw, "%m/%d/%Y").strftime("%Y-%m-%d")
