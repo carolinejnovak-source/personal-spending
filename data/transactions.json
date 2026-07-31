@@ -18932,7 +18932,7 @@
       "amount": 75.0,
       "original_amount": 75.0,
       "category": "Transport",
-      "subcategory": null,
+      "subcategory": "Parking",
       "original_category": "Bills & Utilities",
       "notes": null
     },
