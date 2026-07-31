@@ -18907,7 +18907,7 @@
       "description": "CHIPAY SVC FEE",
       "amount": 1.65,
       "original_amount": 1.65,
-      "category": "Bills & Utilities",
+      "category": "Transport",
       "subcategory": null,
       "original_category": "Bills & Utilities",
       "notes": null
