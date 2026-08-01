@@ -20527,8 +20527,8 @@
       "description": "PULSEWORKS MSI",
       "amount": 14.0,
       "original_amount": 14.0,
-      "category": "Entertainment",
-      "subcategory": "Kids Entertainment",
+      "category": "Kids",
+      "subcategory": null,
       "original_category": "Entertainment",
       "notes": null
     },
