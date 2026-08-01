@@ -20180,7 +20180,7 @@
       "amount": 12.0,
       "original_amount": 12.0,
       "category": "Transport",
-      "subcategory": null,
+      "subcategory": "Parking",
       "original_category": "Travel",
       "notes": null
     },
